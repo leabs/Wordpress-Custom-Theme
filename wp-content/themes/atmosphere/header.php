@@ -13,7 +13,7 @@
 <?php wp_nav_menu (
     array(
         'theme_location' => 'top-menu',
-        'menu_class' => 'top-nav'
+        'menu_class' => 'top-nav navbar-end hidden-sm hidden-xs'
     )
 )
 ?>

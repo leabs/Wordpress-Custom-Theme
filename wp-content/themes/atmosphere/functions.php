@@ -59,12 +59,16 @@ remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 register_nav_menus(
     array(
         'top-menu' => __('Top Menu', 'theme'),
         'main-menu' => __('Main Menu', 'theme'),
     )
-)
+);
+
+add_image_size('smallest', 300, 300, true);
+add_image_size('largest', 800, 800, true);
 
 ?>
