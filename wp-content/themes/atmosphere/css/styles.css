@@ -1,6 +1,7 @@
 .homepage{
-    background:#333 !important;
+    background:#37474f;
     text-align: center;
+    max-height: 500px !important;
 }
 .menu-top-menu-container{
     webkit-box-pack: end;
@@ -36,6 +37,9 @@ a.btn{
 .top-nav:last-child{
     padding-right: 0;
 }
+.menu-main-menu-container #menu-main-menu{
+    display:block;
+}
 /*Headers*/
 .blog-header{
     background:#37474f;
@@ -45,6 +49,3 @@ a.btn{
 }
 
 /*Blog*/
-div.code{
-    background:#333;
-}

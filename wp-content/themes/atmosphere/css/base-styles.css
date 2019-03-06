@@ -2,14 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
 @font-face {
   font-family: Gotham-Book;
-  src: url("../fonts/Gotham-Book.otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Gotham-Book.otf") format("opentype");
+  src: url('wp-content/themes/atmosphere/fonts/Gotham-Book.otf') format("opentype");
+
 }
 
 @font-face {
   font-family: Gotham-Medium;
-  src: url("../fonts/Gotham-Medium.otf") format("opentype");
+  src: url('wp-content/themes/atmosphere/fonts/Gotham-Medium.otf') format("opentype");
 }
 
 h1,
@@ -18921,4 +18920,8 @@ div.navbar-brand div.nav-burger.burger {
   a.navbar-item {
     background: transparent !important;
   }
+}
+
+.menu-main-menu-container #menu-main-menu{
+  display:block;
 }
