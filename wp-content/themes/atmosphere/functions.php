@@ -60,6 +60,7 @@ remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
+add_theme_support( 'custom-logo' );
 
 register_nav_menus(
     array(
@@ -70,5 +71,15 @@ register_nav_menus(
 
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
+add_action('generate_inside_navigation','generate_navigation_logo');
+function generate_navigation_logo()
+{
+?>
+	<div class="site-logo">
+		<img src="THE URL TO YOUR IMAGE" alt="" />
+	</div>
+<?php
+}
 
 ?>

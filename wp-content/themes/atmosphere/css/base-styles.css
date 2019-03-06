@@ -1,15 +1,6 @@
 @import url(../css/xcode.css);
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
-@font-face {
-  font-family: Gotham-Book;
-  src: url('wp-content/themes/atmosphere/fonts/Gotham-Book.otf') format("opentype");
 
-}
-
-@font-face {
-  font-family: Gotham-Medium;
-  src: url('wp-content/themes/atmosphere/fonts/Gotham-Medium.otf') format("opentype");
-}
 
 h1,
 h2,
@@ -43,21 +34,21 @@ a:hover {
 /* Header and section styles */
 /*Headers*/
 h1.full-header {
-  font-family: Gotham-Book;
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 h1.half-header {
-  font-family: Gotham-Book;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 h1.blog-header {
-  font-family: Gotham-Medium;
+  font-family: 'Montserrat', sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 36px;
@@ -65,7 +56,7 @@ h1.blog-header {
 
 /*Section headers*/
 h2.section-header {
-  font-family: Gotham-Book;
+  font-family: 'Montserrat', sans-serif;
   font-size: 28px;
   font-weight: 500;
 }
@@ -79,13 +70,13 @@ h2.sub-header {
 }
 
 h2.blog-sub-header {
-  font-family: Gotham-Book;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 500;
 }
 
 h3.section-subheader {
-  font-family: Gotham-Book;
+  font-family: 'Montserrat', sans-serif;
   font-size: 21px;
   font-weight: 500;
   margin-bottom: 18px;
@@ -95,7 +86,7 @@ h3.section-subheader {
 h4.icon-header {
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   line-height: 18px;
   color: #37474F !important;
   margin-bottom: 12px;
@@ -104,7 +95,7 @@ h4.icon-header {
 h4.icon-header-smaller {
   font-size: 14px !important;
   font-weight: 500 !important;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   line-height: 18px;
   color: #37474F !important;
   margin-bottom: 12px;
@@ -113,7 +104,7 @@ h4.icon-header-smaller {
 h4.icon-header-light {
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   line-height: 21px;
   color: #fff !important;
   margin-bottom: 12px;
@@ -11431,20 +11422,7 @@ table {
  *
  *
  **/
-@font-face {
-  font-family: "Gotham-Medium";
-  src: url("/fonts/Gotham-Medium.otf");
-}
 
-@font-face {
-  font-family: "Gotham-Medium";
-  src: url("/fonts/Gotham-Medium.otf");
-}
-
-@font-face {
-  font-family: "Gotham-Book";
-  src: url("/fonts/Gotham-Book.otf");
-}
 
 #foo {
   display: none;
@@ -11580,7 +11558,7 @@ h2.subhead-custom {
   text-transform: none;
   font-weight: 300;
   color: white;
-  font-family: 'Gotham-Medium';
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -13867,7 +13845,7 @@ input, textarea, button, select {
   width: 100%;
   height: auto;
   font-size: 1rem;
-  font-family: "Gotham-Medium", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 15px;
   outline: 0;
   color: #616161;
@@ -14154,7 +14132,7 @@ button.button-block,
 }
 
 .news-ribbon span {
-  font-family: 'Gotham-Book';
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: white;
@@ -14162,7 +14140,7 @@ button.button-block,
 
 .news-ribbon a {
   text-decoration: underline;
-  font-family: 'Gotham-Book';
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -14175,7 +14153,7 @@ button.button-block,
 
 .search-meta .search-title {
   color: #37474F;
-  font-family: 'Gotham-Medium';
+  font-family: 'Montserrat', sans-serif;
   white-space: normal;
   padding: 0;
   display: block;
@@ -14364,7 +14342,7 @@ input[type="text"]#search-input {
  *
  **/
 body {
-  font-family: "Gotham-Medium", sans-serif, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0.08rem;
