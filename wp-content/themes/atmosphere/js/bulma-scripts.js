@@ -97,3 +97,7 @@ $(document).ready(function() {
         owl.trigger('stop.owl.autoplay')
     })
 });
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});

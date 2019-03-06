@@ -9,9 +9,6 @@ console.log('main.js is running');
       }, 1500);
   });
 
-
-
-
 // IIFE - Immediately Invoked Function Expression
 (function($, window, document) {
 
@@ -200,6 +197,3 @@ console.log('main.js is running');
 // The global jQuery object is passed as a parameter
 
 
-$(document).ready(function(){
-    alert('hey');
-});
