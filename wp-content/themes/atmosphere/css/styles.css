@@ -3,15 +3,41 @@
     background:#37474f;
     text-align: center;
     max-height: 500px !important;
-    margin-top:84px;
+    min-height:60vh;
+    background-image: url('http://localhost:8888/Wordpress-Custom-Theme/wp-content/uploads/2019/03/FastTimeFirstData.jpg');
+    background-position: -400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -200px;
+    -webkit-background-size: cover;
+}
+.is-fullheight{
+    min-height:60vh !important;
 }
 .banner-section{
     min-height:282px;
-    margin-top:84px;
+    background:#37474f;
+    text-align: center;
+    max-height: 500px !important;
+
 }
 .blog-header{
     background:#37474f;
-    margin-top:84px;
+
 }
 
 /* Nav */
@@ -21,6 +47,13 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-left: auto;
+    height: 34px !important;
+}
+#menu-top-menu{
+    height: 26px;
+    max-width: 1344px;
+    margin: 0 auto;
+    background:#fff;
 }
 .top-nav > li{
     width:auto;
@@ -66,6 +99,9 @@
 #menu-main-menu{
     height:64px;
     line-height:64px;
+    max-width: 1344px;
+    margin: 0 auto;
+    background:#fff;
 }
 
 .menu-main-menu-container #menu-main-menu li a{
@@ -79,7 +115,7 @@ font-size: 12px;
 }
 
 .main-nav{
-    margin-top:26px;
+   
 }
 .menu-image-not-hovered{
     padding:0;
@@ -103,3 +139,9 @@ a.btn{
 
 /*Blog*/
 
+/* modules */
+
+/* Containers */
+.has-background-secondary{
+    background:#37474f !important;
+}

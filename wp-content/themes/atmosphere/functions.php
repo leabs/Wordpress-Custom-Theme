@@ -11,6 +11,14 @@ function load_stylesheets()
 
     wp_enqueue_style('xcode');
 
+    wp_register_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), false, 'all');
+
+    wp_enqueue_style('owl-carousel');
+
+    wp_register_style('owl-carousel-theme', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), false, 'all');
+
+    wp_enqueue_style('owl-carousel-theme');
+
     wp_register_style('base-styles', get_template_directory_uri() . '/css/base-styles.css', array(), false, 'all');
 
     wp_enqueue_style('base-styles');
@@ -43,7 +51,7 @@ function loadjs()
 
     wp_enqueue_script('bulma-scripts');
 
-    wp_register_script('carousel', get_template_directory_uri() . '/js/carousel.min.js', '', 1, true);
+    wp_register_script('carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', '', 1, true);
 
     wp_enqueue_script('carousel');
 

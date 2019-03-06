@@ -14,8 +14,8 @@
 <?php wp_nav_menu (
     array(
         'theme_location' => 'top-menu',
-        'menu_class' => 'top-nav navbar-end navbar is-fixed-top',
-        'container_class' => 'container'
+        'menu_class' => 'top-nav navbar-end navbar',
+     
         
     )
 )
@@ -26,8 +26,8 @@
 <?php wp_nav_menu (
     array(
         'theme_location' => 'main-menu',
-        'menu_class' => 'main-nav navbar is-fixed-top',
-        'container_class' => 'container'
+        'menu_class' => 'main-nav navbar-end navbar',
+       
         
     )
 )
