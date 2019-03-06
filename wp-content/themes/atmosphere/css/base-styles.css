@@ -17209,11 +17209,11 @@ section.new-blog-section .blog-post-content blockquote {
   padding: 12px;
 }
 
-section.new-blog-section .blog-post-content blockquote.code {
+section.new-blog-section .blog-post-content div.code {
   margin-top: 0;
 }
 
-section.new-blog-section .blog-post-content blockquote.code ul {
+section.new-blog-section .blog-post-content div.code ul {
   margin-left: 12px;
   margin-bottom: 0;
   font-size: 14px;
