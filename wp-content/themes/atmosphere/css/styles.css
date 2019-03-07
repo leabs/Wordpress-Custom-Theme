@@ -67,6 +67,9 @@ body header.homepageHeader{
     margin: 0 auto;
 
 }
+..menu-main-menu-container #menu-main-menu{
+    display:inline-block;
+}
 .top-nav > li{
     width:auto;
     display:inline-block;
@@ -111,8 +114,11 @@ body header.homepageHeader{
 #menu-main-menu{
     height:64px;
     line-height:64px;
-    max-width: 1344px;
     margin: 0 auto;
+}
+.nav-scrolled{
+    left:0;
+
 }
 
 .menu-main-menu-container #menu-main-menu li a{
