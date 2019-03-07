@@ -1,19 +1,15 @@
-<?php get_header();?>
+<?php
+if(is_page(home))
+{
+get_header('home');
+}
+else
+{
+get_header();
+}
+wp_head();
+?>
 
-<section class="section homepage hero  is-fullheight has-text-white parrallax-font ">
-    <div class="hero-body">
-        <div class="container">
-    <h1 class="has-text-white full-header"><?php the_title();?></h1>
-    <h2 class="has-text-white sub-header">Accelerate your sensor-to-cloud project with the low-code development platform created for IoT solution builders.</h2>
-    <br>
-    <br>
-    <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
-    <button class="atmo-button" onclick="location.href='/contact'">Contact Sales</button>
-</div>
-</div>
-
-    
-</section>
 
 <?php if (have_posts()) : while(have_posts()) : the_post();?>
 

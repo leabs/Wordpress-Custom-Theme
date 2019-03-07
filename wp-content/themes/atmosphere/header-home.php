@@ -10,7 +10,7 @@
 
 <body <?php body_class();?>>
 
-    <header class="pageheader">
+    <header class="pageheader homepageHeader">
         <!--Topbar-->
         <div class="container">
             <?php wp_nav_menu (
@@ -59,11 +59,16 @@
             <div class="container " style="position: relative;">
                 
                         <h1 class="has-text-white full-header">
-                            <?php the_title();?>
+                        Fast time to first data™
                         </h1>
                         <h2 class="has-text-white sub-header">
-                            <?php get_secondary_title(); ?>
+                        Accelerate your sensor-to-cloud project with the low-code development platform created for IoT solution builders.
                         </h2>
+                        <br>
+                        <br>
+                        <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
+                        <button class="atmo-button" onclick="location.href='/contact'">Contact Sales</button>
+                    
 
 
             </div>

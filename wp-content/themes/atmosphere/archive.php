@@ -1,17 +1,5 @@
 <?php get_header();?>
 
-<section class="section blog-header">
-    <div class="hero-body ">
-        <div class="container " style="position: relative;">
-            <div class="columns">
-                <div class="column">
-                    <h1 class="has-text-white is-12-desktop half-header">Atmosphere <?php single_cat_title();?></h1>
-                    <h2 class="has-text-white is-12-desktop sub-header">Keep up with the latest industry insights and platform updates.</h2>
-                </div>  
-            </div> 
-        </div>
-    </div>
-</section>
 
 <section class="section">
     <div class="container">
