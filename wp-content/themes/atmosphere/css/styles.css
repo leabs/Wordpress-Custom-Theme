@@ -120,6 +120,9 @@ body header.homepageHeader{
     left:0;
 
 }
+.nav-scrolled li.current-menu-item a{
+    color:#00ACC1 !important;
+}
 
 .menu-main-menu-container #menu-main-menu li a{
 font-size: 12px;
