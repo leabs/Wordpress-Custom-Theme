@@ -55,7 +55,7 @@
             </div>
 
         </nav>
-
+                                    <section class="hero">
         <div class="hero-body has-text-centered">
             <div class="container " style="position: relative;">
 
@@ -75,5 +75,6 @@
 
             </div>
         </div>
+                                    </section>
 
     </header>

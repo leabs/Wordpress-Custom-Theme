@@ -18,9 +18,14 @@ header.pageheader{
     min-height:400px;
 }
 .hero-body{
-    padding-top: 80px;
     vertical-align: middle;
     margin:0 auto;
+    padding-bottom: 8rem !important;
+    padding-top: 5rem !important;
+}
+.homepageHeader .hero-body{
+    padding-bottom: 12rem !important;
+    padding-top: 12rem !important;
 }
 body header.homepageHeader{
     background:#37474f;
@@ -47,6 +52,19 @@ body header.homepageHeader{
     background-size: cover;
     background-position: center -200px;
     -webkit-background-size: cover;
+}
+body header.pricing-header{
+    background: #37474F;
+    background-image: url('http://localhost:8888/Wordpress-Custom-Theme/wp-content/uploads/2019/03/pricing-header.svg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
 }
 
 /* Nav */
