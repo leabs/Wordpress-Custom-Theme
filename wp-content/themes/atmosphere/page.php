@@ -1,5 +1,14 @@
-<?php get_header();?>
-
+<?php
+if(is_page(pricing))
+{
+get_header('pricing');
+}
+else
+{
+get_header();
+}
+wp_head();
+?>
 
 
 <section class="section">
