@@ -191,7 +191,7 @@ a.btn{
 
 /* modules */
 .atmo-button{
-    padding: 0.8em 2em;
+    padding: 0.8em 2em !important;
     text-align: center;
 }
 
@@ -209,3 +209,28 @@ a.btn{
     min-height: 36px;
     overflow:hidden;
 }
+/* mixin for multiline */
+.homepage-post-excerpt {
+    overflow: hidden;
+    position: relative;
+    line-height: 1em;
+    max-height: 2.1em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  .homepage-post-excerpt:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .homepage-post-excerpt:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+  }

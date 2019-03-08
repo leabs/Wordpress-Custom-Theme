@@ -13,12 +13,12 @@ wp_head();
 
 <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-        <?php the_content();?>
+<?php the_content();?>
 
-    <?php endwhile; endif;?>
+<?php endwhile; endif;?>
 
 
-    <section class="site-section blog-section" id="news">
+<section class="site-section blog-section" id="news">
     <!-- Section Heading -->
     <div class="container">
         <div class="row text-center">
@@ -36,24 +36,29 @@ wp_head();
         </div>
         <!-- Blog Articles Container -->
         <div class="row blog-articles-container" style="margin-top:0;">
-         
-        <?php $catquery = new WP_Query( 'cat=3&posts_per_page=3' ); ?>
-<ul>
-<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-<li class="homepage-blog-card">
-<a href="<?php the_permalink() ?>" rel="bookmark"><?php if ( has_post_thumbnail()) {
+
+            <?php $catquery = new WP_Query( 'cat=3&posts_per_page=3' ); ?>
+            <div class="columns">
+                <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+                <div  class="column homepage-blog-card">
+                    <a href="<?php the_permalink() ?>" rel="bookmark">
+                        <?php if ( has_post_thumbnail()) {
     $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-    echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
+    
     the_post_thumbnail('largest');
     echo '</a>';
- }?><span class="homepage-blog-title"><?php the_title(); ?></span><?php the_excerpt(); ?></a>
-</li>
-<?php endwhile;
+ }?><span
+                            class="homepage-blog-title">
+                            <?php the_title(); ?></span>
+                            <?php echo '<p class="homepage-post-excerpt">' . get_the_excerpt() . '</p>';?>
+                    </a>
+</div>
+                <?php endwhile;
        wp_reset_postdata();
 ?>
-</ul>
-            
-           
+            </div>
+
+
         </div>
         <!-- View All Posts CTA -->
         <div class="row view-posts text-center">
@@ -69,18 +74,17 @@ wp_head();
         <!-- Section Heading -->
         <div class="text-center has-text-white">
             <h3 class="section-subheader has-text-white">Send your next product to the cloud</h3>
-            
+
             <p>Turn your IoT concept into a connected product reality with Atmosphere.</p>
             <br>
             <div class="row buttons-header">
-                
-                    <button type="button" class=" btn btn-default atmo-button atmo-button-primary" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">
-                Get Started
-            </button>
+
+                <button type="button" class=" btn btn-default atmo-button atmo-button-primary" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">
+                    Get Started
+                </button>
             </div>
         </div>
     </div>
 </section>
 
 <?php get_footer();?>
-
