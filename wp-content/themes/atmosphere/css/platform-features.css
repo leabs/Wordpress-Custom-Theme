@@ -1,0 +1,64 @@
+.platform-features-tabs .tabs ul li a span {
+    font-size: 1em;
+  }
+  
+  .platform-features-tabs .tabs.is-toggle li:first-child a,
+  .platform-features-tabs .tabs.is-toggle li:last-child a {
+    border-radius: 0 !important;
+  }
+  
+  .tabs li.is-active a {
+    color: #00acc1;
+  }
+  
+  .tabs li.is-active a {
+    color: #00acc1;
+    border-color: #00acc1;
+  }
+  
+  @media (max-width: 1024px) {
+    .platform-features-tabs .tabs ul {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .platform-features-tabs .tabs li {
+      width: 25%;
+    }
+  }
+  @media (max-width: 768px) {
+    .platform-features-tabs .tabs ul {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .platform-features-tabs .tabs li {
+      width: 50%;
+    }
+  }
+  .platform-features-tabs .tabs a {
+    flex-direction: column;
+  }
+  
+  .tab-wrapper{
+  }
+  
+  .platform-features-tabs img {
+    border: 1px solid #ccc;
+  }
+  
+  .platform-features h3 {
+    font-size: 34px;
+  }
+  
+  .platform-features-cta {
+    background: #00acc1;
+    text-align: center;
+  }
+  .platform-features-cta h3 {
+    font-size: 34px;
+  }
+  
+  

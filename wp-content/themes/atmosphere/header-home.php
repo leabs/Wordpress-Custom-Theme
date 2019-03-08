@@ -24,7 +24,7 @@
             ?>
         </div>
 
-        <nav class="navbar main-nav" role="navigation" aria-label="main navigation">
+        <nav class="navbar main-nav is-hidden-touch" role="navigation" aria-label="main navigation">
 
             <div class="container">
 
@@ -69,7 +69,7 @@
                 <br>
                 <br>
                 <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
-                <button class="atmo-button" onclick="location.href='/contact'">Contact Sales</button>
+                <button class="atmo-button" onclick="location.href='http://localhost:8888/Wordpress-Custom-Theme/contact/'">Contact Sales</button>
 
 
 

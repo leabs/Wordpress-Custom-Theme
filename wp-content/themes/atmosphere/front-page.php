@@ -37,17 +37,19 @@ wp_head();
         <!-- Blog Articles Container -->
         <div class="row blog-articles-container" style="margin-top:0;">
          
-        <ul>
-<?php
-    $args = array(
-        'numberposts' => 3,
-    );
-
-    $recent_posts = wp_get_recent_posts($args, $output = ARRAY_A);
-    foreach( $recent_posts as $recent ){
-        echo get_the_post_thumbnail( $recent["ID"], 'largest' );
-        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-    }
+        <?php $catquery = new WP_Query( 'cat=3&posts_per_page=3' ); ?>
+<ul>
+<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+<li class="homepage-blog-card">
+<a href="<?php the_permalink() ?>" rel="bookmark"><?php if ( has_post_thumbnail()) {
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
+    the_post_thumbnail('largest');
+    echo '</a>';
+ }?><span class="homepage-blog-title"><?php the_title(); ?></span><?php the_excerpt(); ?></a>
+</li>
+<?php endwhile;
+       wp_reset_postdata();
 ?>
 </ul>
             
@@ -55,7 +57,7 @@ wp_head();
         </div>
         <!-- View All Posts CTA -->
         <div class="row view-posts text-center">
-            <button type="button" class=" btn btn-default atmo-button-dark" onclick="location.href='/blog/index.html'">
+            <button type="button" class=" btn btn-default atmo-button-dark" onclick="location.href='http://localhost:8888/Wordpress-Custom-Theme/category/blog/'">
                 View All Posts
             </button>
         </div>

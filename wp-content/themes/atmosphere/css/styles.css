@@ -25,7 +25,7 @@ header.pageheader{
 }
 .homepageHeader .hero-body{
     padding-bottom: 12rem !important;
-    padding-top: 12rem !important;
+    padding-top: 8rem !important;
 }
 body header.homepageHeader{
     background:#37474f;
@@ -183,4 +183,14 @@ a.btn{
 /* Containers */
 .has-background-secondary{
     background:#37474f !important;
+}
+
+/* Homepage */
+.homepage-blog-card{
+    width:30%;
+    display:inline-block;
+}
+.homepage-blog-title{
+    min-height: 36px;
+    overflow:hidden;
 }

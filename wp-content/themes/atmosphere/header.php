@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 
 </head>
 
@@ -24,7 +27,7 @@
             ?>
         </div>
 
-        <nav class="navbar main-nav" role="navigation" aria-label="main navigation">
+        <nav class="navbar main-nav is-hidden-touch" role="navigation" aria-label="main navigation">
 
             <div class="container">
 
