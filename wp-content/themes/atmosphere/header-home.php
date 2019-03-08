@@ -12,8 +12,9 @@
 
     <header class="pageheader homepageHeader">
         <!--Topbar-->
-        <div class="container">
-            <?php wp_nav_menu (
+        <div class="top-nav-wrapper is-hidden-touch">
+            <div class="container">
+                <?php wp_nav_menu (
                 array(
                     'theme_location' => 'top-menu',
                     'menu_class' => 'top-nav navbar-end navbar is-hidden-touch',
@@ -22,6 +23,7 @@
                 )
             )
             ?>
+            </div>
         </div>
 
         <nav class="navbar main-nav is-hidden-touch" role="navigation" aria-label="main navigation">
@@ -55,26 +57,27 @@
             </div>
 
         </nav>
-                                    <section class="hero">
-        <div class="hero-body has-text-centered">
-            <div class="container " style="position: relative;">
+        <section class="hero">
+            <div class="hero-body has-text-centered">
+                <div class="container " style="position: relative;">
 
-                <h1 class="has-text-white full-header">
-                    Fast time to first data™
-                </h1>
-                <h2 class="has-text-white sub-header">
-                    Accelerate your sensor-to-cloud project with the low-code development platform created for IoT
-                    solution builders.
-                </h2>
-                <br>
-                <br>
-                <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
-                <button class="atmo-button" onclick="location.href='http://localhost:8888/Wordpress-Custom-Theme/contact/'">Contact Sales</button>
+                    <h1 class="has-text-white full-header">
+                        Fast time to first data™
+                    </h1>
+                    <h2 class="has-text-white sub-header">
+                        Accelerate your sensor-to-cloud project with the low-code development platform created for IoT
+                        solution builders.
+                    </h2>
+                    <br>
+                    <br>
+                    <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
+                    <button class="atmo-button" onclick="location.href='http://localhost:8888/Wordpress-Custom-Theme/contact/'">Contact
+                        Sales</button>
 
 
 
+                </div>
             </div>
-        </div>
-                                    </section>
+        </section>
 
     </header>

@@ -12,8 +12,9 @@
 
     <header class="pageheader pricing-header">
         <!--Topbar-->
-        <div class="container">
-            <?php wp_nav_menu (
+        <div class="top-nav-wrapper is-hidden-touch">
+            <div class="container">
+                <?php wp_nav_menu (
                 array(
                     'theme_location' => 'top-menu',
                     'menu_class' => 'top-nav navbar-end navbar is-hidden-touch',
@@ -22,6 +23,7 @@
                 )
             )
             ?>
+            </div>
         </div>
 
         <nav class="navbar main-nav" role="navigation" aria-label="main navigation">
@@ -55,23 +57,19 @@
             </div>
 
         </nav>
-                                        
-         <div class="hero-body has-text-centered">
+
+        <div class="hero-body has-text-centered">
             <div class="container " style="position: relative;">
-                
-                        <h1 class="has-text-white full-header">
-                        Start Small. Scale up with no limits.
-                        </h1>
-                        <h2 class="has-text-white sub-header">
-                        Get building for free, no credit card required. Start today.
-                        </h2>
+
+                <h1 class="has-text-white full-header">
+                    Start Small. Scale up with no limits.
+                </h1>
+                <h2 class="has-text-white sub-header">
+                    Get building for free, no credit card required. Start today.
+                </h2>
 
 
             </div>
-        </div>                            
+        </div>
 
     </header>
-
-
-       
-  

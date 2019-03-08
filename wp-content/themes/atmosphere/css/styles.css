@@ -85,8 +85,11 @@ body header.pricing-header{
     margin: 0 auto;
 
 }
-..menu-main-menu-container #menu-main-menu{
+.menu-main-menu-container #menu-main-menu{
     display:inline-block;
+}
+.top-nav-wrapper{
+    background:rgba(0,0,0,0.25);
 }
 .top-nav > li{
     width:auto;

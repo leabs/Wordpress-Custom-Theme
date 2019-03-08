@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 
 
 
@@ -15,8 +16,9 @@
 
     <header class="pageheader">
         <!--Topbar-->
-        <div class="container">
-            <?php wp_nav_menu (
+        <div class="top-nav-wrapper is-hidden-touch">
+            <div class="container">
+                <?php wp_nav_menu (
                 array(
                     'theme_location' => 'top-menu',
                     'menu_class' => 'top-nav navbar-end navbar is-hidden-touch',
@@ -25,6 +27,7 @@
                 )
             )
             ?>
+            </div>
         </div>
 
         <nav class="navbar main-nav is-hidden-touch" role="navigation" aria-label="main navigation">
@@ -58,23 +61,19 @@
             </div>
 
         </nav>
-                                        
-         <div class="hero-body has-text-centered">
+
+        <div class="hero-body has-text-centered">
             <div class="container " style="position: relative;">
-                
-                        <h1 class="has-text-white full-header">
-                            <?php the_title();?>
-                        </h1>
-                        <h2 class="has-text-white sub-header">
-                            <?php get_secondary_title(); ?>
-                        </h2>
+
+                <h1 class="has-text-white full-header">
+                    <?php the_title();?>
+                </h1>
+                <h2 class="has-text-white sub-header">
+                    <?php get_secondary_title(); ?>
+                </h2>
 
 
             </div>
-        </div>                            
+        </div>
 
     </header>
-
-
-       
-  
