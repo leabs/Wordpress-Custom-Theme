@@ -7,6 +7,10 @@ else if(is_page(thankyou))
 {
 get_header('thankyou');
 }
+else if(is_page(company))
+{
+get_header('company');
+}
 else
 {
 get_header();

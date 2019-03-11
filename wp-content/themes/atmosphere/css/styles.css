@@ -110,6 +110,9 @@ body header.thankyou-header{
 .top-nav li{
     padding: 0px 18px;
 }
+.top-nav > li:last-child{
+    padding-right:0;
+}
 .top-nav li a{
     color:#fff;
     text-transform: uppercase;
@@ -136,6 +139,9 @@ body header.thankyou-header{
 }
 #menu-main-menu li.current-menu-item a{
     color:#00ACC1;
+}
+#menu-main-menu li a:last-child{
+    padding-right:0;
 }
 #menu-main-menu li a:hover{
     color:#00ACC1;
@@ -169,12 +175,28 @@ font-size: 12px;
 .menu-image-not-hovered{
     padding:0;
 }
-#menu-main-menu li:first-child{
-    width:192px;
-}
 .homelogo a{
     
 }
+/*Mobile Nav*/
+@media only screen and (max-width: 1087px) {
+    .menu-main-menu-container #menu-main-menu, .menu-main-menu-container #menu-main-menu li {
+      display:block;
+      text-align:left;
+    }
+    .menu-main-menu-container #menu-main-menu li a{
+        color:#37474F;
+    }
+    #menu-main-menu{
+        height:auto;
+    }
+    .navbar-burger{
+        right: 20px;
+        color:#00ACC1;
+    }
+  }
+
+
 /*Headers*/
 
 .news-card{

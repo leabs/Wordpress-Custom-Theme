@@ -25,38 +25,39 @@
             ?>
             </div>
         </div>
-
-        <nav class="navbar main-nav is-hidden-touch" role="navigation" aria-label="main navigation">
-
-            <div class="container">
-
-                <div class="navbar-start">
-                    <!-- navbar items -->
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="http://localhost:8888/Wordpress-Custom-Theme/">
-                            <img src="http://localhost:8888/Wordpress-Custom-Theme/wp-content/uploads/2019/03/AtmosphereLogoHorizontal_NEGATIVE.png"
-                                alt="Atmosphere IOT" width="192" height="34">
-                        </a>
+        <!--Main Nav-->
+        <nav class="navbar is-transparent  " id="main-nav">
+            <div class="container bg" style="min-height: 4rem;">
+                <div class="navbar-brand brand-light" style="min-height: 4rem; padding-left:12px;">
+                    <a class="navbar-item" href="https://www.atmosphereiot.com/" style="padding: .25rem .25rem; width: 200px;">
+                        <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/AtmosphereLogoHorizontal_NEGATIVE.png"
+                            alt="Atmosphere IOT" width="192" height="34">
+                    </a>
+                    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample" style="min-height: 4rem;position: absolute;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
-
-                <div class="navbar-end">
-                    <!-- navbar items -->
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                        <?php wp_nav_menu (
+                <div id="navbarExampleTransparentExample" class="navbar-menu">
+                    <div class="navbar-start">
+                    </div>
+                    <div class="navbar-end" id="nav-container">
+                       
+                            <?php wp_nav_menu (
                                     array(
                                         'theme_location' => 'main-menu',
                                         'menu_class' => '',
                                     
-                                        
                                     )
                                 )
                                 ?>
-                    </a>
+                       
+                    </div>
                 </div>
             </div>
-
         </nav>
+
         <section class="hero">
             <div class="hero-body has-text-centered">
                 <div class="container " style="position: relative;">

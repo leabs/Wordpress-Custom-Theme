@@ -21,11 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    var tocListChildren = $('.toc-list-item').children()
-    var tocSection = $('#tocs');
-    if (tocListChildren.length <= 0) {
-        tocSection.hide();
-    }
 });
 
 //Navbar adjustments on scroll
