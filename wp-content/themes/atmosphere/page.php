@@ -11,6 +11,22 @@ else if(is_page(company))
 {
 get_header('company');
 }
+else if(is_page(platform))
+{
+get_header('platform');
+}
+else if(is_page(contact))
+{
+get_header('contact');
+}
+else if(is_page(partners))
+{
+get_header('partners');
+}
+else if(is_page(features))
+{
+get_header('features');
+}
 else
 {
 get_header();
