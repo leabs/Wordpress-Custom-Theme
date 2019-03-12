@@ -37,7 +37,7 @@ body header.homepageHeader{
     text-align: center;
     max-height: 500px !important;
     min-height:60vh;
-    background-image: url('http://localhost:8888/Wordpress-Custom-Theme/wp-content/uploads/2019/03/FastTimeFirstData.jpg');
+    background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/FastTimeFirstData.jpg');
     background-position: -400px;
     background-size:cover;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ body header.homepageHeader{
 }
 body header.pricing-header{
     background: #37474F;
-    background-image: url('http://localhost:8888/Wordpress-Custom-Theme/wp-content/uploads/2019/03/pricing-header.svg');
+    background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/pricing-header.svg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

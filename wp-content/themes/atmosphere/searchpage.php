@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: Search Page
-*/
-?>
+<?php /* Template Name: Search */ ?>
 <?php get_header(); ?>
 
 

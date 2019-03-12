@@ -1,3 +1,4 @@
+<?php /* Template Name: SearchPage */ ?>
 <?php get_header(); ?>
 <div class="search-container">
     <section id="primary" class="content-area">

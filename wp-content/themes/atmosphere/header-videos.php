@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+
 
 </head>
 
 <body <?php body_class();?>>
 
-    <header class="pageheader homepageHeader">
+    <header class="pageheader thankyou-header">
         <!--Topbar-->
         <div class="top-nav-wrapper is-hidden-touch">
             <div class="container">
@@ -25,6 +29,7 @@
             ?>
             </div>
         </div>
+
         <!--Main Nav-->
         <nav class="navbar is-transparent  " id="main-nav">
             <div class="container bg" style="min-height: 4rem;">
@@ -58,27 +63,19 @@
             </div>
         </nav>
 
-        <section class="hero">
-            <div class="hero-body has-text-centered">
-                <div class="container " style="position: relative;">
+        <div class="hero-body has-text-centered">
+            <div class="container " style="position: relative;">
 
-                    <h1 class="has-text-white full-header">
-                        Fast time to first data™
-                    </h1>
-                    <h2 class="has-text-white sub-header">
-                        Accelerate your sensor-to-cloud project with the low-code development platform created for IoT
-                        solution builders.
-                    </h2>
-                    <br>
-                    <br>
-                    <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
-                    <button class="atmo-button" onclick="location.href='https://testsite.atmosphereiot.com/contact/'">Contact
-                        Sales</button>
+                <h1 class="has-text-white full-header">
+                Thank you for contacting us
+
+                </h1>
+                <h2 class="has-text-white sub-header">
+                We’ll be in touch with you shortly.
+                </h2>
 
 
-
-                </div>
             </div>
-        </section>
+        </div>
 
     </header>

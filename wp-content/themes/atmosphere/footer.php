@@ -4,7 +4,7 @@
         <div class="columns has-text-left has-text-centered-touch" style="padding-top:20px;">
             <div class="column is-one-quarter" style="padding-top:0;">
                 <a href="http://atmosphereiot.com">
-                    <img src="http://localhost:8888/Wordpress-Custom-Theme/wp-content/uploads/2019/03/cloud-footer.svg" class="img-responsive footer-image" alt="cloud logo">
+                    <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/cloud-footer.svg" class="img-responsive footer-image" alt="cloud logo">
                 </a>
             </div>
             <div class="column">

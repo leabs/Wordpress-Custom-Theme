@@ -27,6 +27,10 @@ else if(is_page(features))
 {
 get_header('features');
 }
+else if(is_page(partnercontact))
+{
+get_header('partnercontact');
+}
 else
 {
 get_header();

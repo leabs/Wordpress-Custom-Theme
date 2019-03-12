@@ -64,7 +64,7 @@ wp_head();
         </div>
         <!-- View All Posts CTA -->
         <div class="row view-posts text-center">
-            <button type="button" class=" btn btn-default atmo-button-dark" onclick="location.href='http://localhost:8888/Wordpress-Custom-Theme/category/blog/'">
+            <button type="button" class=" btn btn-default atmo-button-dark" onclick="location.href='https://testsite.atmosphereiot.com/category/blog/'">
                 View All Posts
             </button>
         </div>
