@@ -28,16 +28,16 @@ $(document).ready(function(event) {
     $(window).scroll(function() {
         // 100 = The point you would like to fade the nav in.
         if ($(window).scrollTop() > 34) {
-            $('.main-nav').addClass('nav-scrolled');
-            $('.main-nav').addClass('nav-scrolled-text');
+            $('#main-nav').addClass('nav-scrolled');
+            $('#main-nav').addClass('nav-scrolled-text');
             $('.navbar-brand').addClass('brand-dark');
             $(".hero-body").css("margin-top", "64px");
             $('.navbar-brand').removeClass('brand-light');
             $('.navbar-brand a img').attr('src', 'https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/AtmosphereLogoHorizontal_RGB.png');
             $('.non-parrallax-font nav div div a img').attr('src', 'https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/AtmosphereLogoHorizontal_RGB.png');
         } else {
-            $('.main-nav').removeClass('nav-scrolled');
-            $('.main-nav').removeClass('nav-scrolled-text');
+            $('#main-nav').removeClass('nav-scrolled');
+            $('#main-nav').removeClass('nav-scrolled-text');
             $('.navbar-brand').removeClass('brand-dark');
             $('.navbar-brand').addClass('brand-light');
             $(".hero-body").css("margin-top", "0");

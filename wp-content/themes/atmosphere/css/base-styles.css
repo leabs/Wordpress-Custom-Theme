@@ -15039,7 +15039,7 @@ header section.pricing-header {
 
 .card-content .pricing {
   color: #00ACC1;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 28px;
 }
@@ -16452,7 +16452,7 @@ section.path-to-production-cta h3 {
 }
 
 .article-title .news-title {
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 0;
@@ -17023,18 +17023,18 @@ section.new-blog-section {
 
 section.new-blog-section h1 {
   font-size: 28px !important;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
 section.new-blog-section .is-8 a article p.title {
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 
 section.new-blog-section .is-vertical .is-child p.title {
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px !important;
   font-weight: 500;
 }
@@ -17340,7 +17340,7 @@ section.blog-section .article-content .article-text a:hover {
 section.blog-section .title {
   padding-top: 10px;
   line-height: 16px;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
   font-size: 22px;
 }
@@ -18169,7 +18169,7 @@ footer.footer .menu-label-light {
 
 footer.footer .column aside p.menu-label {
   letter-spacing: 1.2px;
-  font-family: Gotham-Medium !important;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
 }

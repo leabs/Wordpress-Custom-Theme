@@ -1,10 +1,8 @@
 <?php
-/*
-Template Name: Company Page
-*/
-?>
-<?php
-if(is_page(pricing))
+    /*
+    Template Name: Company Page
+    */
+    if(is_page(pricing))
 {
 get_header('pricing');
 }
@@ -15,6 +13,7 @@ get_header();
 }
 wp_head();
 ?>
+
 
 
 
