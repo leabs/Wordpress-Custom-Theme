@@ -74,6 +74,10 @@ body header.pricing-header{
 body header.thankyou-header{
     background:indianred;
 }
+body header.noheader{
+    min-height:0;
+    height:auto;
+}
 
 /* Nav */
 .navbar{

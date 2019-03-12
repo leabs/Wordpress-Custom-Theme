@@ -14245,7 +14245,6 @@ input[type=search] {
   width: auto;
   display: block;
   margin: 0;
-  z-index: 999;
 }
 
 input#search-input {
