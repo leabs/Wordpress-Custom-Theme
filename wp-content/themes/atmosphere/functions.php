@@ -21,6 +21,9 @@ function load_stylesheets()
     wp_register_style('bulma-timeline', get_template_directory_uri() . '/css/bulma-timeline.css', array(), false, 'all');
     wp_enqueue_style('bulma-timeline');
 
+    wp_register_style('headers', get_template_directory_uri() . '/css/headers.css', array(), false, 'all');
+    wp_enqueue_style('headers');
+
     wp_register_style('platform-features', get_template_directory_uri() . '/css/platform-features.css', array(), false, 'all');
     wp_enqueue_style('platform-features');
 

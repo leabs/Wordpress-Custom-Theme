@@ -1,0 +1,105 @@
+/* Headers */
+.is-fullheight{
+    min-height:60vh !important;
+}
+.banner-section{
+    min-height:282px;
+    background:#37474f;
+    text-align: center;
+    max-height: 500px !important;
+
+}
+.blog-header{
+    background:#37474f;
+
+}
+header.pageheader{
+    background:#bbb;
+    min-height:400px;
+}
+.hero-body{
+    vertical-align: middle;
+    margin:0 auto;
+    padding-bottom: 8rem !important;
+    padding-top: 5rem !important;
+}
+.homepage-header .hero-body{
+    padding-bottom: 12rem !important;
+    padding-top: 8rem !important;
+}
+body header.homepage-header{
+    background:#37474f;
+    text-align: center;
+    max-height: 500px !important;
+    min-height:60vh;
+    background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/FastTimeFirstData.jpg');
+    background-position: -400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -200px;
+    -webkit-background-size: cover;
+}
+body header.platform-header{
+    background:#37474f;
+    text-align: center;
+    max-height: 500px !important;
+    min-height:68vh;
+    background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/RisingSunBackgroundCenter.svg');
+    background-position: -400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -200px;
+    -webkit-background-size: cover;
+
+}
+body header.pricing-header{
+    background: #37474F;
+    background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/pricing-header.svg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+body header.partner-contact-header{
+    
+}
+body header.thankyou-header{
+    background:indianred;
+}
+body header.noheader{
+    min-height:0;
+    height:auto;
+}

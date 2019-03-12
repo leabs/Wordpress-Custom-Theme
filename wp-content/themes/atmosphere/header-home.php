@@ -10,7 +10,7 @@
 
 <body <?php body_class();?>>
 
-    <header class="pageheader homepageHeader">
+    <header class="pageheader homepage-header">
         <!--Topbar-->
         <div class="top-nav-wrapper is-hidden-touch">
             <div class="container">

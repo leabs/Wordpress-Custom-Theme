@@ -14,7 +14,7 @@
 
 <body <?php body_class();?>>
 
-    <header class="pageheader thankyou-header">
+    <header class="pageheader platform-header">
         <!--Topbar-->
         <div class="top-nav-wrapper is-hidden-touch">
             <div class="container">
@@ -73,7 +73,10 @@
                 <h2 class="has-text-white sub-header">
                 Accelerate your time to market with Atmosphere’s low-code IoT development platform.
                 </h2>
-
+      
+                <div style="margin-top:40px;">
+                    <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/02/StudioApplicationView.png" alt="screen shot of our platform" style="max-height:450px; margin: 0 auto; box-shadow:0px 5px 15px rgba(0,0,0,0.3); border-radius:2%; z-index:5;" />
+                </div>
 
             </div>
         </div>

@@ -14,7 +14,7 @@
 
 <body <?php body_class();?>>
 
-    <header class="pageheader thankyou-header">
+    <header class="pageheader partner-contact-header">
         <!--Topbar-->
         <div class="top-nav-wrapper is-hidden-touch">
             <div class="container">
