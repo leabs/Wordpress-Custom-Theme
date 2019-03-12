@@ -57,7 +57,7 @@ body header.platform-header{
     background:#37474f;
     text-align: center;
     max-height: 500px !important;
-    min-height:68vh;
+    min-height:800px;
     background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/RisingSunBackgroundCenter.svg');
     background-position: -400px;
     background-size:cover;
@@ -92,6 +92,18 @@ body header.pricing-header{
     -webkit-background-size: cover;
     background-attachment: fixed;
     background-position: bottom center;
+}
+body header.company-header{
+    background: #37474F;
+    background-image: url('https://testsite.atmosphereiot.com/wp-content/uploads/2019/02/Minneapolis.jpg');
+    background-attachment: fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center -300px;
+    background-attachment: fixed;
 }
 body header.partner-contact-header{
     
