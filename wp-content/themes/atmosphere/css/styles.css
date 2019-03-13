@@ -175,8 +175,6 @@ ul.blog-list li:not(:first-child) {
 .homepage-post-excerpt {
     overflow: hidden;
     position: relative;
-    line-height: 1em;
-    max-height: 2.1em;
     text-align: justify;
     margin-right: -1em;
     padding-right: 1em;

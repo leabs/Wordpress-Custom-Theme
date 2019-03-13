@@ -58,9 +58,9 @@
                             News
                         </p>
                         <ul class="menu-list news-list">
-                            <li><a href="/news" class="">All News</a></li>
-                            <li><a href="/blog/insights.html">Press Releases</a></li>
-                            <li><a href="/blog/platform.html">News Coverage</a></li>
+                            <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/news/'); ?>" class="">All News</a></li>
+                            <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/pressreleases/'); ?>">Press Releases</a></li>
+                            <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/newscoverage/'); ?>">News Coverage</a></li>
 
                         </ul>
                         <p class="menu-label menu-label-no-bottom-margin">

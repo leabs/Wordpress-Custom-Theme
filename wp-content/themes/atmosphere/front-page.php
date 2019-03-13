@@ -47,11 +47,17 @@ wp_head();
     
     the_post_thumbnail('largest');
     echo '</a>';
- }?><span
+ }?>
+ <br><span
                             class="homepage-blog-title">
                             <a href="<?php the_permalink() ?>" rel="bookmark">
                                 <?php the_title(); ?></span>
+                                
                     </a>
+                
+                    <p class="latest-post-meta">
+                                <?php the_time('F jS, Y'); ?></p>
+                             
                     <?php echo '<p class="homepage-post-excerpt">' . get_the_excerpt() . '</p>';?>
                     </a>
                 </div>
