@@ -14,7 +14,7 @@
 
 }
 header.pageheader{
-    background:#bbb;
+    background:#37474f;
     min-height:400px;
 }
 .hero-body{
@@ -78,7 +78,12 @@ body header.platform-header{
     background-size: cover;
     background-position: center -200px;
     -webkit-background-size: cover;
-
+}
+body header.platform-header h1{
+    color:#00ACC1 !important;
+}
+body header.platform-header h2{
+    color: #37474F !important;
 }
 body header.pricing-header{
     background: #37474F;

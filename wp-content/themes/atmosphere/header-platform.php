@@ -14,7 +14,7 @@
 
 <body <?php body_class();?>>
 
-    <header class="pageheader platform-header">
+    <header class="pageheader platform-header dark-nav">
         <!--Topbar-->
         <div class="top-nav-wrapper is-hidden-touch">
             <div class="container">
@@ -31,6 +31,7 @@
         </div>
 
         <!--Main Nav-->
+        <div class="non-parrallax-font">
         <nav class="navbar is-transparent  " id="main-nav">
             <div class="container bg" style="min-height: 4rem;">
                 <div class="navbar-brand brand-light" style="min-height: 4rem; padding-left:12px;">
@@ -62,6 +63,7 @@
                 </div>
             </div>
         </nav>
+                                    </div>
 
         <div class="hero-body has-text-centered">
             <div class="container " style="position: relative;">

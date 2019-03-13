@@ -3,7 +3,7 @@
 <section class="section">
     <div class="container">
         <div class="columns">
-            <div class="column is-3 is-hidden-touch" style="padding-left:12px; padding-right:22px; padding-top:20px; padding-bottom:0;">
+            <div class="column is-3 is-hidden-touch" style="padding-left:12px; padding-right:22px; padding-top:20px; padding-bottom:0; padding-top:0;">
                 <div class="control has-icons-left has-icons-right is-hidden-touch" id="search-wrapper">
                     <div class="header-search">
                         <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
@@ -12,7 +12,7 @@
                                 <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>"
                                     value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
                             </label>
-                            <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+                            
                         </form>
                     </div>
                 </div>
@@ -82,11 +82,11 @@
                     ?>
                 </aside>
             </div>
-            <div class="column">
+            <div class="column is-9">
                 <?php if (have_posts()) : while(have_posts()) : the_post();?>
                 <a href="<?php the_permalink();?>">
                     <div class="columns news-card" style="padding:12px;">
-                        <div class="column is-9">
+                        <div class="column">
                             <!-- Article Header -->
                             <header class="article-header">
                                 <div class="article-title">
@@ -95,7 +95,7 @@
                                     </h4>
 
                                     <p class="blog-meta">
-                                        <span style="text-transform: capitalize;">CATEGORY
+                                        <span style="text-transform: capitalize;"><?php the_category(', '); ?> 
 
                                         </span>
                                         <span> | </span><span>Jan</span> <span>09</span><span>, 20</span><span>19</span></p>
@@ -129,6 +129,7 @@
                 </a>
                 <?php endwhile; endif;?>
             </div>
+            
         </div>
     </div>
 </section>

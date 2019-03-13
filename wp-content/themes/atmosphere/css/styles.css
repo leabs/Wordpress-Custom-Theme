@@ -48,6 +48,9 @@ Author: Steven Leabo
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
 }
+.dark-nav #menu-main-menu li a{
+    color:#37474F;
+}
 .top-nav li a:hover{
     color:#00acc1;
 }
@@ -124,8 +127,6 @@ Author: Steven Leabo
     }
   }
 
-
-/*Headers*/
 
 .news-card{
     background:#f5f5f5;
