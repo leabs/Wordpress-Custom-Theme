@@ -22,36 +22,64 @@
                         Blog
                     </p>
                     <ul class="menu-list blog-list">
-                        <li><a href="/blog" class="has-text-primary">All Posts</a></li>
+                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/'); ?>" class="">All Posts</a></li>
                         <li><a href="/blog/insights.html">Insights</a></li>
                         <li><a href="/blog/platform.html">Platform</a></li>
                     </ul>
                     <p class="menu-label menu-label-no-bottom-margin">
-                        Latest Posts
+                        Latest Blog Posts
                     </p>
                     <ul class="menu-list blog-list">
 
-                        <li style="padding: 6px 0;">
-                            <a class="" href="/blog/platform-1-2-2.html" style="padding:0; margin-bottom:0;">Platform
-                                Update: Version 1.2.2</a>
-                            <span class="blog-meta">Posted <span>Dec</span> <span>02</span><span>, 20</span><span>18</span>
-                            </span></li>
+                        <?php $catquery = new WP_Query( 'cat=3&posts_per_page=5' ); ?>
 
-                    </ul>
-                    <p class="menu-label">
-                        Events
-                    </p>
-                    <ul class="menu-list events-list">
-                        <li><a href="/events">Upcoming Events</a></li>
-                        <li><a href="/events/events-archive.html">Event Archive</a></li>
-                    </ul>
-                    <p class="menu-label">
-                        News
-                    </p>
-                    <ul class="menu-list news-list">
-                        <li><a href="/news" class="">All News</a></li>
 
+                        <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+
+
+                        <li><a href="<?php the_permalink() ?>" rel="bookmark">
+                                <?php the_title(); ?></a></li>
+                        <span class="latest-post-meta">
+                            <?php the_time('F jS, Y'); ?></span>
+                        <?php endwhile;
+                            wp_reset_postdata();
+                    ?>
                     </ul>
+
+                        <p class="menu-label">
+                            Events
+                        </p>
+                        <ul class="menu-list events-list">
+                            <li><a href="/events">Upcoming Events</a></li>
+                            <li><a href="/events/events-archive.html">Event Archive</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            News
+                        </p>
+                        <ul class="menu-list news-list">
+                            <li><a href="/news" class="">All News</a></li>
+                            <li><a href="/blog/insights.html">Press Releases</a></li>
+                            <li><a href="/blog/platform.html">News Coverage</a></li>
+
+                        </ul>
+                        <p class="menu-label menu-label-no-bottom-margin">
+                            Latest News Posts
+                        </p>
+                        <ul class="menu-list blog-list">
+
+                            <?php $catquery = new WP_Query( 'cat=4&posts_per_page=5' ); ?>
+
+
+                            <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+
+
+                            <li><a href="<?php the_permalink() ?>" rel="bookmark">
+                                    <?php the_title(); ?></a></li>
+                            <span class="latest-post-meta">
+                                <?php the_time('F jS, Y'); ?></span>
+                            <?php endwhile;
+                            wp_reset_postdata();
+                    ?>
                 </aside>
             </div>
             <div class="column">
@@ -67,7 +95,7 @@
                                     </h4>
 
                                     <p class="blog-meta">
-                                        <span style="text-transform: capitalize;">Press Releases
+                                        <span style="text-transform: capitalize;">CATEGORY
 
                                         </span>
                                         <span> | </span><span>Jan</span> <span>09</span><span>, 20</span><span>19</span></p>
