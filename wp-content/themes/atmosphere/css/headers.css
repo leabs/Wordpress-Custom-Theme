@@ -107,7 +107,7 @@ body header.company-header{
     -o-background-size: contain;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center top;
+    background-position: center -300px;
     background-attachment: fixed;
 }
 body header.partner-contact-header{

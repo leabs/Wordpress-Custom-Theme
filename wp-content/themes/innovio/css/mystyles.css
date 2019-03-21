@@ -1,0 +1,308 @@
+/*Nav*/
+header > .mkdf-page-header,
+header > .mkdf-fixed-wrapper,
+header > .mkdf-vertical-align-containers,
+header > .mkdf-menu-right,
+header > .mkdf-page-header .mkdf-menu-area,
+header > .mkdf-vertical-align-containers
+{
+    height: 64px;
+}
+header > .mkdf-fixed-wrapper{
+    height:64px !important;
+}
+.mkdf-page-header .mkdf-menu-area{
+    height:64px !important;
+}
+.mkdf-dark-header .mkdf-page-header>div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener, .mkdf-dark-header .mkdf-top-bar .mkdf-side-menu-button-opener,
+.mkdf-side-menu-button-opener.mkdf-side-menu-button-opener-predefined{
+    display:none;
+}
+header > 
+header > .fixed {
+    max-width:1344px;
+    margin: 0 auto;
+}
+.mkdf-page-header .mkdf-vertical-align-containers{
+    width: 1344px;
+    margin: 0 auto;
+    padding:0;
+}
+
+/* Logo */
+.mkdf-logo-wrapper a img{
+    height: 35px;
+    width: 192px;
+    transition:0;
+}
+header .mkdf-position-left{
+    top:16px;
+}
+.fixed .mkdf-position-left{
+    top: 12px;
+}
+#menu-main{
+    margin-top:10px;
+}
+.mkdf-side-menu-slide-from-right .mkdf-fixed-wrapper.fixed, .mkdf-side-menu-slide-from-right .mkdf-sticky-header, .mkdf-side-menu-slide-from-right footer.mkdf-footer-uncover{
+    transition: none;
+}
+
+/*Containers*/
+#homepage div.kc_column
+{
+    padding:0;
+}
+
+
+
+/*Nav*/
+
+
+.menu-top-navigation>.menu-item-type-custom {
+    display: inline-block;
+}
+
+.mkdf-main-menu>ul>li>a:hover>span.item_outer .item_text svg {
+    opacity: 0;
+}
+
+.mkdf-main-menu>ul>li>a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 8px 17px;
+    font-family: Gotham-Medium;
+    color: #37474F !important;
+}
+
+/* Headers */
+#homepage-header {
+    height: 800px;
+    min-height: 80%;
+    background-size: cover;
+}
+
+/* Containers*/
+.mkdf-content .mkdf-content-inner>.mkdf-container>.mkdf-container-inner,
+.mkdf-content .mkdf-content-inner>.mkdf-full-width>.mkdf-full-width-inner {
+    padding-top: 0;
+}
+
+
+
+/*Typography*/
+@font-face {
+    font-family: Gotham-Book;
+    src: url(public_html/your-site/wp-content/Gotham-Book.otf);
+    /* IE9 Compat Modes */
+    src: url(public_html/your-site/wp-content/Gotham-Book.otf) format('opentype'),
+        /* Pretty Modern Browsers */
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(public_html/your-site/wp-content/Gotham-Medium.otf) format("opentype");
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 0;
+    text-transform: inherit;
+}
+
+h4,
+h5,
+p,
+li,
+td {
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 0;
+}
+
+a {
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+
+a:hover {
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+
+
+/* Header and section styles */
+/*Headers*/
+h1.full-header {
+    font-family: Gotham-Book;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+h1.half-header {
+    font-family: Gotham-Book;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h1.blog-header {
+    font-family: Gotham-Medium;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+/*Section headers*/
+h2.section-header {
+    font-family: Gotham-Book;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/*for top of page only, otherwise use body for subheaders elsewhere*/
+h2.sub-header {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+h2.blog-sub-header {
+    font-family: Gotham-Book;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3.section-subheader {
+    font-family: Gotham-Book;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+/*Icon headers*/
+.icon-header {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Gotham-Medium;
+    line-height: 18px;
+    color: #37474F;
+    margin-bottom: 12px;
+}
+
+h4.icon-header-smaller {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Gotham-Medium;
+    line-height: 18px;
+    color: #37474F;
+    margin-bottom: 12px;
+}
+
+h4.icon-header-light {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Gotham-Medium;
+    line-height: 21px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+/*rare h5 subheader*/
+h5.mewtwo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*Overrides*/
+h1.has-text-white,
+h2.has-text-white,
+h3.has-text-white,
+h4.has-text-white,
+h5.has-text-white,
+p.has-text-white,
+li.has-text-white {
+    color: #fff !important;
+}
+
+/* Blog */
+
+.mkdf-blog-holder {
+    padding-top: 60px;
+}
+
+.mkdf-blog-holder.mkdf-blog-standard article {
+    margin: 20px !important;
+}
+
+.mkdf-blog-single>article {
+    width: 100%;
+}
+
+/* Forms */
+.wpcf7 {
+    width: 600px;
+    margin: 0 auto !important;
+    padding: 20px;
+}
+
+.wpcf7-form {
+    padding: 30px;
+    margin-top: 60px;
+}
+
+/* Buttons */
+.mkdf-btn {
+    border-radius: 0;
+    font-size: 12px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    font-family: 'Gotham-Medium', Fallback, sans-serif;
+    letter-spacing: 1.2px;
+    padding: 0.8em 2em;
+    text-transform: uppercase;
+}
+
+.mkdf-btn:hover {
+	background:transparent !important;
+	border:2px solid white;
+	color:white !important;
+}
+
+.mkdf-btn-svg-two, .mkdf-btn-svg-one {
+    display: none;
+}
+
+.mkdf-btn-text {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Careers */
+.career-card {
+    margin-bottom: 0;
+    margin: 24px;
+    background: white;
+    padding: 18px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    padding-bottom: 31px;
+}
+
+.career-card:hover {
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15) !important;
+}
