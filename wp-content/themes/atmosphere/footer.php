@@ -29,8 +29,8 @@
                     <ul class="menu-list menu-list-lighter">
                         <li><a href="https://atmosphereiot.com/platform">Platform</a></li>
                         <li><a href="https://atmosphereiot.com/pricing">Pricing </a></li>
-                        <li><a href="https://platform.atmosphereiot.com/" target="_blank">Login <img src="/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
-                        <li><a href="https://bit.ly/2q8RO4s" target="_blank">Register <img src="/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
+                        <li><a href="https://platform.atmosphereiot.com/" target="_blank">Login <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
+                        <li><a href="https://bit.ly/2q8RO4s" target="_blank">Register <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
                         <!--<li><a href="" >Features</a></li>-->
                         <!--<li><a href="" >Solutions</a></li>-->
                         <!--<li><a href="https://atmosphereiot.com/pricing" >Pricing</a></li>-->
@@ -44,9 +44,9 @@
                     </p>
                     <ul class="menu-list menu-list-lighter">
                         <li><a href="https://atmosphereiot.com/blog">Blog</a></li>
-                        <li><a href="https://developer.atmosphereiot.com/" target="_blank">Docs <img src="/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
+                        <li><a href="https://developer.atmosphereiot.com/" target="_blank">Docs <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
                         <li><a href="https://www.atmosphereiot.com/videos">Videos</a></li>
-                        <li><a href="https://forum.atmosphereiot.com/" target="_blank">Forums <img src="/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
+                        <li><a href="https://forum.atmosphereiot.com/" target="_blank">Forums <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/03/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
                     </ul>
                 </aside>
             </div>
