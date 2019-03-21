@@ -22,11 +22,11 @@
                         Blog
                     </p>
                     <ul class="menu-list blog-list">
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/'); ?>"
+                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/'); ?>"
                                 class="">All Posts</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/insights'); ?>"">Insights</a></li>
+                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/insights/'); ?>"">Insights</a></li>
                             <li><a href="
-                                <?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/platform');
+                                <?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/platform/');
                                 ?>"">Platform</a></li>
                     </ul>
                     <p class="menu-label menu-label-no-bottom-margin">
@@ -62,11 +62,11 @@
                         News
                     </p>
                     <ul class="menu-list news-list">
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/news/'); ?>"
+                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/news/'); ?>"
                                 class="">All News</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/pressreleases/'); ?>">Press
+                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/pressreleases/'); ?>">Press
                                 Releases</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/newscoverage/'); ?>">News
+                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/newscoverage/'); ?>">News
                                 Coverage</a></li>
 
                     </ul>

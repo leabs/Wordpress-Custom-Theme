@@ -1,8 +1,3 @@
-
-
-
-
-
 <?php get_header('nobanner');?>
 
 <section class="section">
