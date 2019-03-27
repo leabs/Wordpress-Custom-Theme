@@ -77,7 +77,7 @@
                 </h2>
       
                 <div style="margin-top:40px;">
-                    <img src="https://testsite.atmosphereiot.com/wp-content/uploads/2019/02/StudioApplicationView.png" alt="screen shot of our platform" style="max-height:500px; margin: 0 auto; box-shadow:0px 5px 15px rgba(0,0,0,0.3); border-radius:2%; z-index:5;" />
+                    <img src="<?php bloginfo('template_url'); ?>/images/platform/StudioApplicationView.png" alt="screen shot of our platform" style="max-height:500px; margin: 0 auto; box-shadow:0px 5px 15px rgba(0,0,0,0.3); border-radius:2%; z-index:5;" />
                 </div>
 
             </div>
