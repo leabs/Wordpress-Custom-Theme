@@ -66,7 +66,7 @@
                         News
                     </p>
                     <ul class="menu-list news-list">
-                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/news/'); ?>"
+                        <li><a class="has-text-primary" href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/news/'); ?>"
                                 class="">All News</a></li>
                         <li><a
                                 href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/pressreleases/'); ?>">Press
@@ -101,14 +101,14 @@
             </div>
 
             <div class="column is-9">
-            <div class=" columns " style=" padding:12px;">
+            <div style=" padding:12px;">
                 <?php if (have_posts()) : while(have_posts()) : the_post();?>
                 <a href="<?php the_permalink();?>">
                     
-                        <div class="column news-card is-6" style="margin:10px;">
+                        <div class="column news-card is-12" style="margin:10px;">
                             <!-- Article Header -->
                             <header class="article-header">
-                                <?php the_post_thumbnail( 'category-thumb' ); ?>
+                              
                                 <div class="article-title">
                                     <h4 class="title news-title icon-header ">
                                         <?php the_title();?>
@@ -143,10 +143,7 @@
                     
                     
                 
-                <?php $counter++;
-                  if ($counter % 2 == 0) {
-                  echo '</div><div class="columns" style="padding:12px;">';
-                }
+                <?php 
                 endwhile; endif; ?>
                 </a>
                 </div>

@@ -65,9 +65,9 @@ remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
 add_theme_support('menus');
-add_theme_support('post-thumbnails');
 add_theme_support( 'custom-logo' );
 add_theme_support( 'title-tag' );
+add_theme_support( 'post-thumbnails' ); 
 
 register_nav_menus(
     array(

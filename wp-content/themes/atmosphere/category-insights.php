@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('blog');?>
 
 <section class="section">
     <div class="container">
@@ -27,7 +27,7 @@
                     <ul class="menu-list blog-list">
                         <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/'); ?>"
                                 class="">All Posts</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/insights/'); ?>"">Insights</a></li>
+                        <li><a class="has-text-primary" href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/insights/'); ?>"">Insights</a></li>
                             <li><a href=" <?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/blog/platform/');
                                 ?>"">Platform</a></li>
                     </ul>

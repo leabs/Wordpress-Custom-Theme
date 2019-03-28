@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('blog');?>
 
 <section class="section">
     <div class="container">
@@ -74,7 +74,7 @@
                         <li><a
                                 href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/newscoverage/'); ?>">News
                                 Coverage</a></li>
-                        <li><a
+                        <li><a class="has-text-primary"
                                 href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/newsletter/'); ?>">
                                 Newsletter</a></li>
 
