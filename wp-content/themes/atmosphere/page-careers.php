@@ -12,6 +12,57 @@ get_header('careers'); ?>
 
         <?php endwhile; endif;?>
 
+        <section class="section quickly-launch" style="padding-top:50px; ">
+    <div class="container">
+        <h2 class="section-header has-text-centered">Current Openings</h2>
+        <br>
+        <p class="has-text-centered">The following career opportunities are currently available at Atmosphere:</p>
+        <div class="openings-wrapper">
+
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+            <a href="/careers/dev-ops-engineer.html">
+                    <div class="openings-card">
+                        <h4 class="icon-header">Senior DevOps Engineer</h4>
+                        <p class="career-location">Minneapolis, MN; Syracuse, NY; or remote/home office location</p>
+                        
+                        <p class="career-description">Atmosphere is seeking to hire a full-time Senior DevOps Engineer to build and manage a system infrastructure that is automated, reliable and scalable and delivers an outstanding customer experience. &nbsp;The DevOps Engineer role will report to the CTO.</p>
+                    </div>
+                </a>
+
+            <a href="/careers/firmware-developer.html">
+                    <div class="openings-card">
+                        <h4 class="icon-header">Firmware Developer</h4>
+                        <p class="career-location">Minneapolis, MN; Syracuse, NY; or remote/home office location</p>
+                        
+                        <p class="career-description">Atmosphere is seeking to hire a firmware developer to expand the library of sensors, radios, and microcontroller/processor devices supported within the Atmosphere Studio IDE. The firmware developer role will report to the CTO.</p>
+                    </div>
+                </a>
+
+        </div>
+    </div>
+</section>
+
+
 <section class="section" style="background:#f5f5f5;">
     <div style="max-width:1000px; margin:0 auto;">
         <div>
