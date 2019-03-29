@@ -15,7 +15,7 @@
                     <ul class="menu-list menu-list-lighter">
                         <li><a href="https://atmosphereiot.com/company">About</a></li>
                         <li><a href="https://atmosphereiot.com/partners">Partners</a></li>
-                        <li><a href="https://atmosphereiot.com/news">News</a></li>
+                        <li><a href="https://atmosphereiot.com/category/news">News</a></li>
                         <li><a href="https://atmosphereiot.com/careers/">Careers</a></li>
                         <li><a href="https://atmosphereiot.com/contact/">Contact</a></li>
                     </ul>
@@ -43,7 +43,7 @@
                         Resources
                     </p>
                     <ul class="menu-list menu-list-lighter">
-                        <li><a href="https://atmosphereiot.com/blog">Blog</a></li>
+                        <li><a href="https://atmosphereiot.com/category/blog">Blog</a></li>
                         <li><a href="https://developer.atmosphereiot.com/" target="_blank">Docs <img src="<?php bloginfo('template_url'); ?>/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
                         <li><a href="https://www.atmosphereiot.com/videos">Videos</a></li>
                         <li><a href="https://forum.atmosphereiot.com/" target="_blank">Forums <img src="<?php bloginfo('template_url'); ?>/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
@@ -66,7 +66,7 @@
         <div class="footer-text">
             <div class="columns" style="border-top:1px solid #F5F5F5; margin:0px;">
                 <div class="column has-test-left has-text-centered-touch copyright-wrapper" style="padding-left:0; padding-top:0;">
-                    <p class="copyright">Copyright © 2019, Atmosphere IoT Corp. All Rights Reserved.</p>
+                    <p class="copyright">Copyright © <?php echo date("Y"); ?>, Atmosphere IoT Corp. All Rights Reserved.</p>
                 </div>
                 <div class="column social-media has-text-right has-text-centered-touch" style="display:block; margin:0 auto; ">
                     <a href="https://www.facebook.com/AtmosphereIoT/ " target="_blank "><i class="fab fa-facebook fa-lg" aria-label="Leads to our facebook account"></i></a>
