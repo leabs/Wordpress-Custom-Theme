@@ -37,21 +37,24 @@ get_header('company'); ?>
                 <div class="column homepage-blog-card">
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <?php if ( has_post_thumbnail()) {
-    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-    
-    the_post_thumbnail('largest');
-    echo '</a>';
- }?><span
-                            class="homepage-blog-title">
+                            $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+                            
+                            the_post_thumbnail('largest');
+                            echo '</a>';
+                        }?>
+                        <br><span class="homepage-blog-title">
                             <a href="<?php the_permalink() ?>" rel="bookmark">
                                 <?php the_title(); ?></span>
+
                     </a>
+
+                    <p class="latest-post-meta">
+                        <?php the_time('F jS, Y'); ?></p>
+
                     <?php echo '<p class="homepage-post-excerpt">' . get_the_excerpt() . '</p>';?>
                     </a>
                 </div>
-                <?php endwhile;
-       wp_reset_postdata();
-?>
+                <?php endwhile;wp_reset_postdata();?>
             </div>
 
 
