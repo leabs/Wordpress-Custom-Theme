@@ -68,6 +68,9 @@
                                 Releases</a></li>
                         <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/newscoverage/'); ?>">News
                                 Coverage</a></li>
+                        <li><a 
+                                href="<?php echo wp_make_link_relative('https://testsite.atmosphereiot.com/category/newsletter/'); ?>">
+                                Newsletter</a></li>
 
                     </ul>
                     <p class="menu-label menu-label-no-bottom-margin">
