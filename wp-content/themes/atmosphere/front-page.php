@@ -43,32 +43,34 @@ wp_head();
                 <div class="column homepage-blog-card">
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <?php if ( has_post_thumbnail()) {
-                            $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-                            
-                            the_post_thumbnail('largest');
-                            echo '</a>';
-                        }?>
-                        <br><span class="homepage-blog-title">
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    
+    the_post_thumbnail('largest');
+    echo '</a>';
+ }?>
+ <br><span
+                            class="homepage-blog-title">
                             <a href="<?php the_permalink() ?>" rel="bookmark">
                                 <?php the_title(); ?></span>
-
+                                
                     </a>
-
+                
                     <p class="latest-post-meta">
-                        <?php the_time('F jS, Y'); ?></p>
-
+                                <?php the_time('F jS, Y'); ?></p>
+                             
                     <?php echo '<p class="homepage-post-excerpt">' . get_the_excerpt() . '</p>';?>
                     </a>
                 </div>
-                <?php endwhile;wp_reset_postdata();?>
+                <?php endwhile;
+       wp_reset_postdata();
+?>
             </div>
 
 
         </div>
         <!-- View All Posts CTA -->
         <div class="row view-posts text-center">
-            <button type="button" class=" btn btn-default atmo-button-dark"
-                onclick="location.href='https://testsite.atmosphereiot.com/category/blog/'">
+            <button type="button" class=" btn btn-default atmo-button-dark" onclick="location.href='https://testsite.atmosphereiot.com/category/blog/'">
                 View All Posts
             </button>
         </div>
@@ -85,8 +87,7 @@ wp_head();
             <br>
             <div class="row buttons-header">
 
-                <button type="button" class=" btn btn-default atmo-button atmo-button-primary"
-                    onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">
+                <button type="button" class=" btn btn-default atmo-button atmo-button-primary" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">
                     Get Started
                 </button>
             </div>

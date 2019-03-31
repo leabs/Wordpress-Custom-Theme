@@ -195,3 +195,6 @@ ul.blog-list li:not(:first-child) {
     margin-top: 0.2em;
     background: white;
   }
+  .timeline-item .timeline-content .heading{
+    font-family: 'Montserrat', sans-serif !important;
+  }

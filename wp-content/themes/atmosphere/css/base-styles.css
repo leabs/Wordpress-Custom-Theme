@@ -15725,7 +15725,7 @@ header section.company-header {
 }
 
 .timeline-header span {
-  font-family: 'Gotham-Medium';
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 500;
 }
 
@@ -15735,8 +15735,8 @@ header section.company-header {
 }
 
 .timeline-content .heading {
-  font-family: 'Gotham-Medium' !important;
-  font-weight: 500 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
   font-size: 12px;
   letter-spacing: 0;
 }
