@@ -50,6 +50,8 @@ function loadjs()
 
     wp_register_script('bulma-scripts', get_template_directory_uri() . '/js/bulma-scripts.js', '', 1, true);
     wp_enqueue_script('bulma-scripts');
+    wp_register_script('bulma-tabs', get_template_directory_uri() . '/js/bulma-tabs.js', '', 1, true);
+    wp_enqueue_script('bulma-tabs');
     wp_register_script('carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', '', 1, true);
     wp_enqueue_script('carousel');
     wp_register_script('platform-features-tabs', get_template_directory_uri() . '/js/platform-features-tabs.js', '', 1, true);
