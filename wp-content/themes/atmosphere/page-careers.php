@@ -40,7 +40,7 @@ get_header('careers'); ?>
         
 
 
-            <a href="/careers/dev-ops-engineer.html">
+            <a href="https://atmosphereiot.com/careers/senior-devops-engineer/">
                     <div class="openings-card">
                         <h4 class="icon-header">Senior DevOps Engineer</h4>
                         <p class="career-location">Minneapolis, MN; Syracuse, NY; or remote/home office location</p>
@@ -49,7 +49,7 @@ get_header('careers'); ?>
                     </div>
                 </a>
 
-            <a href="/careers/firmware-developer.html">
+            <a href="https://atmosphereiot.com/careers/firmware-developer/">
                     <div class="openings-card">
                         <h4 class="icon-header">Firmware Developer</h4>
                         <p class="career-location">Minneapolis, MN; Syracuse, NY; or remote/home office location</p>
