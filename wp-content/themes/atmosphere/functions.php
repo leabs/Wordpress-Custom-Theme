@@ -30,6 +30,9 @@ function load_stylesheets()
     wp_register_style('styles', get_template_directory_uri() . '/css/styles.css', array(), false, 'all');
     wp_enqueue_style('styles');
 
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
+    wp_enqueue_style('bootstrap');
+
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
@@ -47,15 +50,16 @@ add_action('wp_enqueue_scripts', 'include_jquery');
 
 function loadjs()
 {
-
-    wp_register_script('bulma-scripts', get_template_directory_uri() . '/js/bulma-scripts.js', '', 1, true);
-    wp_enqueue_script('bulma-scripts');
+    wp_register_script('bulma-accordion', get_template_directory_uri() . '/js/bulma-accordion.js', '', 1, true);
+    wp_enqueue_script('bulma-accordion');
     wp_register_script('bulma-tabs', get_template_directory_uri() . '/js/bulma-tabs.js', '', 1, true);
     wp_enqueue_script('bulma-tabs');
     wp_register_script('carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', '', 1, true);
     wp_enqueue_script('carousel');
     wp_register_script('platform-features-tabs', get_template_directory_uri() . '/js/platform-features-tabs.js', '', 1, true);
     wp_enqueue_script('platform-features-tabs');
+    wp_register_script('bulma-scripts', get_template_directory_uri() . '/js/bulma-scripts.js', '', 1, true);
+    wp_enqueue_script('bulma-scripts');
     wp_register_script('mainjs', get_template_directory_uri() . '/js/main.js', '', 1, true);
     wp_enqueue_script('mainjs');
 }

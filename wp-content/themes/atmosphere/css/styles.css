@@ -131,6 +131,7 @@ Author: Steven Leabo
 .news-card{
     background:#f5f5f5;
     margin-bottom:30px !important;
+    min-height:130px;
 }
 
 /* Components */
@@ -197,4 +198,13 @@ ul.blog-list li:not(:first-child) {
   }
   .timeline-item .timeline-content .heading{
     font-family: 'Montserrat', sans-serif !important;
+  }
+  .company-page-thumbs{
+    padding:14px;
+  }
+  .partner-image-wrapper{
+      min-height:100px;
+  }
+  .partner-image{
+      padding-top:10px;
   }
