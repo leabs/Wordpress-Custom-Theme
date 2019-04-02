@@ -28,14 +28,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<p class="max-upload-size">
-	<?php printf( __( 'Maximum upload file size: <strong>%s</strong>.', AI1WM_PLUGIN_NAME ), esc_html( size_format( wp_max_upload_size() ) ) ); ?>
-</p>
-<p>
-	<a href="https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/" target="_blank"><?php _e( 'How-to: Increase maximum upload file size', AI1WM_PLUGIN_NAME ); ?></a>
-	<?php _e( 'or', AI1WM_PLUGIN_NAME ); ?>
-	<a href="https://import.wp-migration.com" target="_blank" class="ai1wm-label">
-		<i class="ai1wm-icon-notification"></i>
-		<?php _e( 'Get unlimited', AI1WM_PLUGIN_NAME ); ?>
-	</a>
-</p>
+<?php _e( 'Maximum upload file size:', AI1WM_PLUGIN_NAME ); ?>
+<?php if ( ( $max_file_size = apply_filters( 'ai1wm_max_file_size', AI1WM_MAX_FILE_SIZE ) ) ) : ?>
+	<span class="ai1wm-max-upload-size"><?php echo size_format( $max_file_size ); ?></span>
+	<span class="ai1wm-unlimited-import">
+		<a href="https://servmask.com/products/unlimited-extension" target="_blank" class="ai1wm-label">
+			<i class="ai1wm-icon-notification"></i>
+			<?php _e( 'Get unlimited', AI1WM_PLUGIN_NAME ); ?>
+		</a>
+	</span>
+<?php else : ?>
+	<span class="ai1wm-max-upload-size"><?php _e( 'Unlimited', AI1WM_PLUGIN_NAME ); ?></span>
+<?php endif; ?>

@@ -26,16 +26,13 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Kangaroos cannot jump here' );
 }
-?>
 
-<p class="max-upload-size">
-	<?php printf( __( 'Maximum upload file size: <strong>%s</strong>.', AI1WM_PLUGIN_NAME ), esc_html( size_format( wp_max_upload_size() ) ) ); ?>
-</p>
-<p>
-	<a href="https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/" target="_blank"><?php _e( 'How-to: Increase maximum upload file size', AI1WM_PLUGIN_NAME ); ?></a>
-	<?php _e( 'or', AI1WM_PLUGIN_NAME ); ?>
-	<a href="https://import.wp-migration.com" target="_blank" class="ai1wm-label">
-		<i class="ai1wm-icon-notification"></i>
-		<?php _e( 'Get unlimited', AI1WM_PLUGIN_NAME ); ?>
-	</a>
-</p>
+define( 'AI1WMTE_VERSION', '1.4' );
+define( 'AI1WMTE_PLUGIN_NAME', 'all-in-one-wp-migration-file-extension' );
+
+define( 'AI1WMTE_LIB_PATH', AI1WMTE_PATH . DIRECTORY_SEPARATOR . 'lib' );
+
+define( 'AI1WMTE_CONTROLLER_PATH', AI1WMTE_LIB_PATH . DIRECTORY_SEPARATOR . 'controller' );
+define( 'AI1WMTE_TEMPLATES_PATH', AI1WMTE_LIB_PATH . DIRECTORY_SEPARATOR . 'view' );
+
+define( 'AI1WMTE_PURCHASE_ID', 0x01 );

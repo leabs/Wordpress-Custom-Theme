@@ -22,11 +22,11 @@
                         Blog
                     </p>
                     <ul class="menu-list blog-list">
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/'); ?>"
+                        <li><a href="<?php echo wp_make_link_relative('/category/blog/'); ?>"
                                 class="">All Posts</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/insights'); ?>"">Insights</a></li>
+                        <li><a href="<?php echo wp_make_link_relative('/category/blog/insights'); ?>"">Insights</a></li>
                             <li><a href="
-                                <?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/blog/platform');
+                                <?php echo wp_make_link_relative('/category/blog/platform');
                                 ?>"">Platform</a></li>
                     </ul>
                     <p class="menu-label menu-label-no-bottom-margin">
@@ -53,20 +53,20 @@
                         Events
                     </p>
                     <ul class="menu-list events-list">
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/events/'); ?>">Upcoming
+                        <li><a href="<?php echo wp_make_link_relative('/events/'); ?>">Upcoming
                                 Events</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/events-archive/'); ?>">Event
+                        <li><a href="<?php echo wp_make_link_relative('/events-archive/'); ?>">Event
                                 Archive</a></li>
                     </ul>
                     <p class="menu-label">
                         News
                     </p>
                     <ul class="menu-list news-list">
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/news/'); ?>"
+                        <li><a href="<?php echo wp_make_link_relative('/category/news/'); ?>"
                                 class="">All News</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/pressreleases/'); ?>">Press
+                        <li><a href="<?php echo wp_make_link_relative('/category/pressreleases/'); ?>">Press
                                 Releases</a></li>
-                        <li><a href="<?php echo wp_make_link_relative('http://localhost/Wordpress-Custom-Theme/category/newscoverage/'); ?>">News
+                        <li><a href="<?php echo wp_make_link_relative('/category/newscoverage/'); ?>">News
                                 Coverage</a></li>
 
                     </ul>
@@ -92,7 +92,9 @@
             </div>
 
             <div class="column is-9">
-                 <!--banner image if statement-->
+            <h1 class="section-header"><?php the_title(); ?></h1>
+            <br>
+                 
         <?php
             if ( has_post_thumbnail()) {
                 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'largest');

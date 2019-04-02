@@ -208,3 +208,24 @@ ul.blog-list li:not(:first-child) {
   .partner-image{
       padding-top:10px;
   }
+  .search-field{
+      border:0;
+      padding:0;
+      padding-bottom:2px;
+      font-size:14px;
+      max-width:230px;
+      border-bottom:1px solid #ccc;
+  }
+  .search-page-form{
+    max-width:500px;
+      margin: 0 auto;
+  }
+
+  #searchform > div > input{
+     
+      display:block;
+  }
+
+  #searchform > div > label{
+    display:block;
+}
