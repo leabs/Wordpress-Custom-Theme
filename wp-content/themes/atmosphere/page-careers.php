@@ -19,36 +19,6 @@ get_header('careers'); ?>
         <p class="has-text-centered">The following career opportunities are currently available at Atmosphere:</p>
         <div class="openings-wrapper">
 
-
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-            <a href="https://atmosphereiot.com/careers/senior-devops-engineer/">
-                    <div class="openings-card">
-                        <h4 class="icon-header">Senior DevOps Engineer</h4>
-                        <p class="career-location">Minneapolis, MN; Syracuse, NY; or remote/home office location</p>
-                        
-                        <p class="career-description">Atmosphere is seeking to hire a full-time Senior DevOps Engineer to build and manage a system infrastructure that is automated, reliable and scalable and delivers an outstanding customer experience. &nbsp;The DevOps Engineer role will report to the CTO.</p>
-                    </div>
-                </a>
-
             <a href="https://atmosphereiot.com/careers/firmware-developer/">
                     <div class="openings-card">
                         <h4 class="icon-header">Firmware Developer</h4>
