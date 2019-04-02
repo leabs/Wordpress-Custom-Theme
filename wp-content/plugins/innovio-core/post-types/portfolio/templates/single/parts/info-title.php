@@ -1,1 +1,0 @@
-<span class="mkdf-ps-info-title"><?php echo esc_html( $title ); ?></span>
