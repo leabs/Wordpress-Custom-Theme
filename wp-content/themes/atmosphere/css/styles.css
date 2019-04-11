@@ -229,3 +229,10 @@ ul.blog-list li:not(:first-child) {
   #searchform > div > label{
     display:block;
 }
+
+ul.code{
+	margin-top:12px;
+	margin-left:20px;
+	list-style: disc;
+    line-height: 1.5;
+}

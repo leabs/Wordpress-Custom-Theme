@@ -119,7 +119,7 @@
                                             <?php the_category(', '); ?>
 
                                         </span>
-                                        <span> | </span><span>Jan</span> <span>09</span><span>, 20</span><span>19</span>
+                                        <span> | </span><span><?php the_date('F j, Y'); ?></span>
                                     </p>
                                 </div>
                             </header>

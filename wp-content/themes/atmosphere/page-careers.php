@@ -12,25 +12,7 @@ get_header('careers'); ?>
 
         <?php endwhile; endif;?>
 
-        <section class="section quickly-launch" style="padding-top:50px; ">
-    <div class="container">
-        <h2 class="section-header has-text-centered">Current Openings</h2>
-        <br>
-        <p class="has-text-centered">The following career opportunities are currently available at Atmosphere:</p>
-        <div class="openings-wrapper">
 
-            <a href="https://atmosphereiot.com/careers/firmware-developer/">
-                    <div class="openings-card">
-                        <h4 class="icon-header">Firmware Developer</h4>
-                        <p class="career-location">Minneapolis, MN; Syracuse, NY; or remote/home office location</p>
-                        
-                        <p class="career-description">Atmosphere is seeking to hire a firmware developer to expand the library of sensors, radios, and microcontroller/processor devices supported within the Atmosphere Studio IDE. The firmware developer role will report to the CTO.</p>
-                    </div>
-                </a>
-
-        </div>
-    </div>
-</section>
 
 
 <section class="section" style="background:#f5f5f5;">
