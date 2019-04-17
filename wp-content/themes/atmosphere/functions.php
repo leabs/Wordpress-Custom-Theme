@@ -50,7 +50,7 @@ add_action('wp_enqueue_scripts', 'include_jquery');
 
 function loadjs()
 {
-    wp_register_script('bulma-accordion', get_template_directory_uri() . '/js/bulma-accordion.js', '', 1, true);
+    wp_register_script('bulma-accordion', get_template_directory_uri() . '/js/bulma-accordion.min.js', '', 1, true);
     wp_enqueue_script('bulma-accordion');
     wp_register_script('bulma-tabs', get_template_directory_uri() . '/js/bulma-tabs.js', '', 1, true);
     wp_enqueue_script('bulma-tabs');
