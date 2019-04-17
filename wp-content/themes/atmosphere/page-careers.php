@@ -12,6 +12,31 @@ get_header('careers'); ?>
 
         <?php endwhile; endif;?>
 
+        <section class="section">
+            <div class="container">
+
+            <?php $catquery = new WP_Query( 'cat=6&posts_per_page=5' ); ?>
+
+
+                        <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+
+
+                        <a href="<?php the_permalink() ?>" rel="bookmark">
+                        <div class="column news-card is-12" style="margin:10px;">
+                                <?php the_title(); ?>
+                        <p class="latest-post-meta">
+                            <?php the_time('F jS, Y'); ?></p>
+                        <?php endwhile;
+                                wp_reset_postdata();
+                        ?>
+                        <p><?php the_excerpt(); ?></p>
+                        </div>
+                        </a>
+               
+
+                        
+            </div>
+        </section>
 
 
 

@@ -31,9 +31,7 @@
                         <li><a href="https://atmosphereiot.com/pricing">Pricing </a></li>
                         <li><a href="https://platform.atmosphereiot.com/" target="_blank">Login <img src="<?php bloginfo('template_url'); ?>/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
                         <li><a href="https://bit.ly/2q8RO4s" target="_blank">Register <img src="<?php bloginfo('template_url'); ?>/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
-                        <!--<li><a href="" >Features</a></li>-->
-                        <!--<li><a href="" >Solutions</a></li>-->
-                        <!--<li><a href="https://atmosphereiot.com/pricing" >Pricing</a></li>-->
+                       
                     </ul>
                 </aside>
             </div>
@@ -44,6 +42,7 @@
                     </p>
                     <ul class="menu-list menu-list-lighter">
                         <li><a href="https://atmosphereiot.com/category/blog/">Blog</a></li>
+						<li><a href="https://atmosphereiot.com/category/newsletter/">Newsletter</a></li>
                         <li><a href="https://developer.atmosphereiot.com/" target="_blank">Docs <img src="<?php bloginfo('template_url'); ?>/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
                         <li><a href="https://www.atmosphereiot.com/videos">Videos</a></li>
                         <li><a href="https://forum.atmosphereiot.com/" target="_blank">Forums <img src="<?php bloginfo('template_url'); ?>/images/icons/icons8-external_link.svg" style="width:14px; height:14px; display:inline-block; vertical-align: top;"></a></li>
