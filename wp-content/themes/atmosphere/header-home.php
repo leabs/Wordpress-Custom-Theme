@@ -72,7 +72,7 @@
                     <br>
                     <br>
                     <button class="atmo-button" onclick=" window.open('https://bit.ly/2q8RO4s','_blank')">Get Started</button>
-                    <button class="atmo-button" onclick="location.href='https://testsite.atmosphereiot.com/contact/'">Contact
+                    <button class="atmo-button" onclick="location.href='https://atmosphereiot.com/contact/'">Contact
                         Sales</button>
 
 

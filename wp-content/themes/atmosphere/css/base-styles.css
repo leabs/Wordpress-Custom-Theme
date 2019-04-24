@@ -34,21 +34,21 @@ a:hover {
 /* Header and section styles */
 /*Headers*/
 h1.full-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 h1.half-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 h1.blog-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 36px;
@@ -56,7 +56,7 @@ h1.blog-header {
 
 /*Section headers*/
 h2.section-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   font-size: 28px;
   font-weight: 500;
 }
@@ -70,13 +70,13 @@ h2.sub-header {
 }
 
 h2.blog-sub-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   font-size: 24px;
   font-weight: 500;
 }
 
 h3.section-subheader {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   font-size: 21px;
   font-weight: 500;
   margin-bottom: 18px;
@@ -86,7 +86,7 @@ h3.section-subheader {
 h4.icon-header {
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   line-height: 18px;
   color: #37474F !important;
   margin-bottom: 12px;
@@ -95,7 +95,7 @@ h4.icon-header {
 h4.icon-header-smaller {
   font-size: 14px !important;
   font-weight: 500 !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   line-height: 18px;
   color: #37474F !important;
   margin-bottom: 12px;
@@ -104,7 +104,7 @@ h4.icon-header-smaller {
 h4.icon-header-light {
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Gotham-Book, sans-serif;
   line-height: 21px;
   color: #fff !important;
   margin-bottom: 12px;

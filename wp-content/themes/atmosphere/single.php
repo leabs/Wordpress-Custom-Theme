@@ -1,3 +1,4 @@
+<?php /* Template Name: Blog post with Date */ ?>
 <?php get_header('nobanner');?>
 
 <section class="section">
@@ -113,16 +114,7 @@
                 <?php endwhile; endif;?>
             </div>
 
-            <div class="column is-1 is-hidden-mobile" style="position:relative;">
-                <div class="social-icon-container">
-                <div class="column has-text-left has-text-secondary blog-post-share-icons" style="display:block; margin:0 auto; ">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.atmosphereiot.com<?php the_permalink() ?>" target="_blank"><i class="fab fa-facebook fa-2x" aria-label="Share to your facebook account"></i></a>
-                    <a href="https://twitter.com/share?url=https://www.atmosphereiot.com<?php the_permalink() ?>&text=<?php the_title(); ?>&via=Atmosphere_Corp" target="_blank"><i class="fab fa-twitter fa-2x" aria-label="Share to your twitter account"></i></a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.atmosphereiot.com<?php the_permalink() ?>&title= <?php the_title(); ?>
-                &summary= <?php the_excerpt(); ?>&source=Atmosphere%20IoT%20Corp" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="Share to your linked account"></i></a>
-                </div>
-                </div>
-            </div>
+           
 
         </div>
     </div>

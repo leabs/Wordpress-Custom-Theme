@@ -1,0 +1,205 @@
+.project-title {
+  font-size: 22px;
+}
+
+.project-author {
+  font-size: 14px;
+  color: #37474f;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.project-meta {
+  font-size: 14px;
+  color: #37474f;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.project-card {
+  border-radius: 0;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 24px rgba(55, 71, 79, 0.25);
+}
+
+.project-card-content {
+  color: #616161 !important;
+}
+
+.project-card-content,
+.project-card-header {
+  min-height: 87px;
+  background: 0;
+  border: 0;
+}
+
+.project-card-header p.project-card-header-title {
+  color: #37474f !important;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+.date-meta-project-card {
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.project-card-footer-icon {
+  margin-right: 6px;
+}
+
+.project-card-footer {
+  border: 0;
+  font-size: 14px;
+}
+
+.project-card-footer > a {
+  border: 0;
+}
+
+.project-card-footer-item:not(:last-child) {
+  border: 0;
+}
+
+.project-content {
+  font-size: 14px;
+}
+
+a,
+button {
+  color: #00acc1;
+  background: 0;
+  border: 0;
+}
+
+button,
+.is-hoverable {
+  cursor: pointer;
+}
+
+.project-card-footer {
+  font-size: 14px;
+  background: 0;
+}
+
+.project-card-footer a:hover {
+  text-decoration: none;
+  color: #37474f;
+}
+
+.project-card-header-icon {
+  padding: 0;
+  justify-content: left;
+}
+
+.project-description {
+  line-height: 1.75;
+  min-height: 120px;
+}
+
+.filter-menu {
+  display: block;
+  width: 100%;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.filter-menu ul {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.filter-menu ul label {
+  color: #37474f;
+}
+
+.filter-menu ul li {
+  display: inline-block;
+  position: relative;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: #37474f;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #00acc1;
+}
+
+.filter-list li {
+  position: relative;
+  top: 6px;
+}
+
+div.select select {
+  border-radius: 0;
+  min-width: 250px;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #00acc1;
+}
+
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus {
+  border-color: #00acc1;
+  box-shadow: 0;
+}
+
+.project-dropdown-content {
+  box-shadow: 0 0 0;
+  border-radius: 0;
+}
+
+button:active {
+  border: 0;
+  box-shadow: 0;
+}
+
+button:focus {
+  border: 0;
+  box-shadow: 0;
+  outline: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .card {
+    margin-bottom: 40px;
+  }
+}
+.project-navbar-dropdown {
+  background-color: white;
+  box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+  display: none;
+  left: 0;
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 20;
+}
+
+.project-navbar-item:hover .project-navbar-dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 1088px) {
+  .project-navbar-dropdown {
+    display: none;
+  }
+}
+.project-button-disabled {
+  opacity: 0.5;
+  color: #333;
+  cursor: default;
+}
