@@ -31,50 +31,56 @@ get_header('projects'); ?>
                   <div class="project-card-header-title">
                      <a href="<?php the_permalink() ?>" rel="bookmark">
                         <div class="">
-                           <?php the_title(); ?>
+                        <?php the_post_thumbnail( 'category-thumb' ); ?>
+                           
                      </a>
-                     <p class="latest-post-meta">
-                     </p>
-                     <?php endwhile;
-                                wp_reset_postdata();
-                        ?>
+                   
+                     
+                     
+                     
 
                   </div>
+                  
                </header>
+               <br>
+               <a href="<?php the_permalink() ?>" rel="bookmark">
+                     <h4><?php the_title(); ?></h4>
+                     </a>
+                     <br>
                <div class="content project-content">
-                  <p class="project-author"><a href="#">John Doe</a></p>
-                  <p class="project-description">
-                     <?php the_excerpt(); ?></p>
-
-                  <div class="row">
-                     <div class="col-md-6">
-                        <a href="#" class="card-header-icon" aria-label="more options">
-                           <span class="">
-                              <span class="tag is-info">ESP32</span>
-                           </span>
-                        </a>
-                     </div>
-                     <div class="col-md-6">
-                        <div class="has-text-right date-meta-project-card">
+                  <p class="project-author">Created By: <a href="#">John Doe</a></p>
+                  <div class="has-text-left date-meta-project-card">
                            <time><?php the_time('F jS, Y'); ?></time>
                         </div>
-                     </div>
-                  </div>
+                        <hr>
+                  
+                     <?php the_excerpt(); ?>
+
+                 
+                     
+                        <a href="#" class="card-header-icon has-text-left" aria-label="more options" style="">
+                           <span class="">
+                              <span class="tag is-warning">NXP Rapid IoT</span>
+                           </span>
+                        </a>
+                   
+                     
+                  
                </div>
 
 
                <!--Card footer-->
                <footer class="project-card-footer card-footer">
-                  <a href="#" class="project-card-footer-item project-button-disabled"><i
+                  <a href="<?php the_permalink() ?>" class="card-footer-item project-card-footer-item"><i
                         class="far fa-eye project-card-footer-icon"></i> View</a>
 
                   <a href="https://platform.atmosphereiot.com/#%7B%22location%22%3A%22ProjectEditor%22%2C%22projectExample%22%3A%22UART%20Slave%20Demo.atmo%22%7D"
-                     target="_blank" class="card-footer-item"><i class="fas fa-hammer project-card-footer-icon"></i>
+                     target="_blank" class="card-footer-item project-card-footer-item"><i class="fas fa-hammer project-card-footer-icon"></i>
                      Build</a>
 
-                  <div class="navbar-item has-dropdown is-hoverable project-card-footer-item">
+                  <div class="navbar-item has-dropdown is-hoverable card-footer-item project-card-footer-item">
                      <a class="navbar-link ">
-                        <i class="fas fa-share-alt project-card-footer-icon"></i> Share
+                        <i class="fas fa-share-alt project-card-footer-icon card-footer-icon"></i> Share
                      </a>
 
                      <div class="navbar-dropdown">
@@ -97,6 +103,9 @@ get_header('projects'); ?>
 
             </div>
          </div>
+         <?php endwhile;
+                                wp_reset_postdata();
+                        ?>
       </div>
 </section>
 

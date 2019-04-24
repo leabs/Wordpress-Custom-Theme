@@ -20,6 +20,11 @@
   border-radius: 0;
   justify-content: space-between;
   flex-direction: column;
+  width:100% !important;
+  padding:12px !important;
+}
+.project-card-footer-item{
+  color:#616161;
 }
 
 .project-card:hover {
