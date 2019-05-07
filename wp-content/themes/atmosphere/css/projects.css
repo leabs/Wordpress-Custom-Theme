@@ -1,6 +1,5 @@
-.project-content .project-title {
+.project-title {
   font-size: 22px;
-  color:#00acc1;
 }
 
 .project-author {
@@ -21,10 +20,7 @@
   border-radius: 0;
   justify-content: space-between;
   flex-direction: column;
-  width:100% !important;
-}
-.project-card-footer-item{
-  color:#616161;
+  
 }
 
 .project-card:hover {
@@ -35,8 +31,11 @@
 
 .project-card-content {
   color: #616161 !important;
+  padding:10px !important;
 }
-
+.project-header-content{
+  padding:10px !important;
+}
 .project-card-content,
 .project-card-header {
   min-height: 87px;
@@ -61,21 +60,20 @@
 }
 
 .project-card-footer {
- 
+  border: 0;
   font-size: 14px;
 }
 
 .project-card-footer > a {
-  
+  border: 0;
 }
 
 .project-card-footer-item:not(:last-child) {
-
+  border: 0;
 }
 
 .project-content {
   font-size: 14px;
-  padding:12px;
 }
 
 a,
@@ -209,17 +207,6 @@ button:focus {
   color: #333;
   cursor: default;
 }
-.project-card-share-icon{
-
-}
-.navbar-link:not(.is-arrowless)::after{
-  border-color:#616161;
-}
-.project-social-footer .project-card-footer-item{
-  min-width:33%;
-  min-height:39px;
-}
-.project-social-footer .project-card-footer-item {
-  font-size: 14px !important;
-
+.project-share-icon{
+  margin-right:6px;
 }

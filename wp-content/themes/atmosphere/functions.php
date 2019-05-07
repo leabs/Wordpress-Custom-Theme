@@ -85,7 +85,7 @@ register_nav_menus(
     )
 );
 
-add_image_size('smallest', 300, 300, true);
+add_image_size('smallest', 500, 500, true);
 add_image_size('largest', 800, 800, true);
 
 add_action('generate_inside_navigation','generate_navigation_logo');
@@ -98,4 +98,21 @@ function generate_navigation_logo()
 <?php
 }
 
+
+add_filter('single_template', 'check_for_category_single_template');
+function check_for_category_single_template( $t )
+{
+  foreach( (array) get_the_category() as $cat ) 
+  { 
+    if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php"; 
+    if($cat->parent)
+    {
+      $cat = get_the_category_by_ID( $cat->parent );
+      if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
+    }
+  } 
+  return $t;
+}
+
 ?>
+

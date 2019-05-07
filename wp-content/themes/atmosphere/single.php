@@ -1,4 +1,3 @@
-<?php /* Template Name: Blog post with Date */ ?>
 <?php get_header('nobanner');?>
 
 <section class="section">

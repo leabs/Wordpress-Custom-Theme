@@ -66,7 +66,7 @@
                     Project Gallery
                 </h1>
                 <h2 class="has-text-white sub-header">
-                    Sub header text here.
+                    Check out these projects that use Atmosphere IoT Studio.
                 </h2>
 
 
