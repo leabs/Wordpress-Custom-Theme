@@ -1,7 +1,7 @@
 <?php
    /**
-    * (C) 2018 by Kolja Nolte
-    * kolja@koljanolte.com
+    * (C) 2019 by Kolja Nolte
+    * kolja.nolte@gmail.com
     * https://www.koljanolte.com
     *
     * This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,7 @@
    /**
     * Stop script when the file is called directly.
     *
-    * @since 0.1
+    * @since 0.0.1
     */
    if(!function_exists("add_action")) {
       return false;
@@ -34,14 +34,67 @@
    add_action("plugins_loaded", "secondary_title_load_translations");
 
    /**
+    * Add a secondary title meta box to Gutenberg editor
+    *
+    * @param $post
+    *
+    * @since 2.0.0
+    */
+   function secondary_title_gutenberg_meta_box_content($post) {
+      $secondary_title = get_secondary_title($post->ID);
+      $secondary_title = esc_html($secondary_title);
+      $title           = __("Enter secondary title here", "secondary-title");
+      $placeholder     = $title . "...";
+      ?>
+      <input type="text" value="<?php echo $secondary_title; ?>" id="secondary-title" class="components-text-control__input" name="secondary_post_title" title="<?php echo $title; ?>" placeholder="<?php echo $placeholder; ?>" />
+      <?php
+   }
+
+   /**
+    * @since 2.0.0
+    */
+   function secondary_title_gutenberg_add_meta_box() {
+      global $current_screen;
+
+      if(method_exists($current_screen, "is_block_editor") && $current_screen->is_block_editor()) {
+         add_meta_box(
+            "secondary_title_gutenberg_meta_box",
+            __("Secondary Title", "secondary-title"),
+            "secondary_title_gutenberg_meta_box_content",
+            secondary_title_get_setting("post_types"),
+            "side"
+         );
+      }
+   }
+
+   add_action("add_meta_boxes", "secondary_title_gutenberg_add_meta_box");
+
+   /**
+    * @since 2.0.0
+    */
+   function secondary_title_gutenberg_register_meta() {
+      register_meta(
+         "any",
+         "_secondary_title",
+         [
+            "type"         => "string",
+            "single"       => true,
+            "show_in_rest" => true
+         ]
+      );
+   }
+
+   add_action("init", "secondary_title_gutenberg_register_meta");
+
+   /**
     * Updates the secondary title when "Edit post" screen
     * is being saved.
     *
-    * @since 0.1
-    *
     * @param $post_id
     *
-    * @return mixed
+    * @return bool|int
+    *
+    * @since 0.0.1
     */
    function secondary_title_edit_post($post_id) {
       if(!isset($_POST["secondary_post_title"])) {
@@ -63,7 +116,11 @@
          return false;
       }
 
-      return update_post_meta($post_id, "_secondary_title", stripslashes(esc_attr($_POST["secondary_post_title"])));
+      return update_post_meta(
+         $post_id,
+         "_secondary_title",
+         stripslashes(esc_attr($_POST["secondary_post_title"]))
+      );
    }
 
    add_action("save_post", "secondary_title_edit_post");
@@ -72,11 +129,11 @@
     * Adds a "Secondary title" column to the posts/pages
     * overview (edit.php).
     *
-    * @since 0.7
-    *
     * @param $columns
     *
     * @return array
+    *
+    * @since 0.7
     */
    function secondary_title_overview_columns($columns) {
       $new_columns = array();
@@ -116,7 +173,12 @@
             add_filter("manage_{$post_type}_posts_columns", "secondary_title_overview_columns");
 
             /** Adding columns content */
-            add_filter("manage_{$post_type}_posts_custom_column", "secondary_title_overview_column_content", 10, 2);
+            add_filter(
+               "manage_{$post_type}_posts_custom_column",
+               "secondary_title_overview_column_content",
+               10,
+               2
+            );
          }
       }
    }
@@ -140,11 +202,11 @@
     * If auto show function is set, replace the post titles
     * with custom title format.
     *
-    * @since 0.1
+    * @param $title string The default title
     *
-    * @param $title
+    * @return string The changed or default title
     *
-    * @return mixed
+    * @since 0.0.1
     */
    function secondary_title_auto_show($title) {
       global $post;
@@ -154,14 +216,14 @@
 
       /** Don't do "auto show" when on admin area or if the post is not a valid post */
       if(!isset($post->ID) || is_admin()) {
-         return $standard_title;
+         return (string)$standard_title;
       }
 
       $secondary_title = get_secondary_title($post->ID, "", "", true);
 
       /** Validate secondary title */
       if(!$secondary_title || get_option("secondary_title_auto_show") === "off" || $title !== wptexturize($post->post_title) || is_admin()) {
-         return $standard_title;
+         return (string)$standard_title;
       }
 
       /** Apply title format */
@@ -185,11 +247,11 @@
       if(secondary_title_get_setting("only_show_in_main_post") === "on") {
          global $wp_query;
          if(!$wp_query->in_the_loop) {
-            return $standard_title;
+            return (string)$standard_title;
          }
       }
 
-      return $title;
+      return (string)$title;
    }
 
    add_filter("the_title", "secondary_title_auto_show");
@@ -197,13 +259,13 @@
    /**
     * Loads scripts and styles.
     *
-    * @since 0.1
+    * @since 0.0.1
     */
    function secondary_title_scripts_and_styles() {
-      /** Find out what page we're on */
-      $current_screen = get_current_screen();
-      $page_base      = $current_screen->base;
-      $plugin_folder  = plugin_dir_url(dirname(__FILE__));
+      global $current_screen;
+
+      $page_base     = $current_screen->base;
+      $plugin_folder = plugin_dir_url(__DIR__);
 
       /** Don't load anything if we're not on the right page */
       if($page_base !== "edit" && $page_base !== "post" && $page_base !== "settings_page_secondary-title") {
@@ -241,9 +303,9 @@
    /**
     * Initialize setting on admin interface.
     *
-    * @since 0.1
+    * @since 0.0.1
     */
-   function init_admin_settings() {
+   function secondary_title_init_admin_settings() {
       /** Creates a new page on the admin interface */
       add_options_page(
          __("Settings", "secondary-title"),
@@ -254,7 +316,7 @@
       );
    }
 
-   add_action("admin_menu", "init_admin_settings");
+   add_action("admin_menu", "secondary_title_init_admin_settings");
 
    /**
     * Registers the %secondary_title% tag as a
@@ -272,10 +334,10 @@
     * @param $permalink
     * @param $post
     *
-    * @since 1.5.4
-    *
     * @return mixed
-    **/
+    **@since 1.5.4
+    *
+    */
    function secondary_title_modify_permalink($permalink, $post) {
       $secondary_title = get_secondary_title($post->ID);
       $secondary_title = sanitize_title_for_query($secondary_title);
@@ -299,9 +361,9 @@
     *
     * @param $original_title
     *
+    * @return string
     * @since 1.7
     *
-    * @return string
     */
    function secondary_title_modify_feed_title($original_title) {
       global $post;
@@ -339,9 +401,9 @@
    /**
     * @param $pieces
     *
+    * @return mixed
     * @since 1.8.0
     *
-    * @return mixed
     */
    function secondary_title_extend_search($pieces) {
       if(is_search() && !is_admin()) {
@@ -373,9 +435,9 @@
     *
     * @param $join
     *
+    * @return string
     * @since 1.9.0
     *
-    * @return string
     */
    function secondary_title_search_join($join) {
       global $wpdb;
@@ -392,9 +454,10 @@
     *
     * @param $where
     *
+    * @return mixed
+    *
     * @since 1.9.0
     *
-    * @return mixed
     */
    function secondary_title_search_where($where) {
       global $wpdb;
@@ -415,9 +478,10 @@
     *
     * @param $where
     *
+    * @return string
+    *
     * @since 1.9.0
     *
-    * @return string
     */
    function secondary_title_search_distinct($where) {
       if(is_search()) {
@@ -436,11 +500,11 @@
    /**
     * Displays the secondary title when shortcode is used.
     *
-    * @since 1.9.2
-    *
     * @param $attributes
     *
     * @return string
+    *
+    * @since 1.9.2
     */
    function secondary_title_add_shortcode_function($attributes) {
       $post_id = get_the_ID();
@@ -509,13 +573,15 @@
                <i class="fab fa-paypal"></i>
                <?php _e("Keep Secondary Title alive by Donating via PayPal", "secondary-title"); ?>
             </a>
-            <a href="?secondary_title_notice=off" class="button button-secondary dismiss-button">
+            <a href="<?php echo get_admin_url(get_current_blog_id(), "?secondary_title_notice=off"); ?>" class="button button-secondary dismiss-button">
                <i class="fa fa-times"></i>
                <?php _e("Stop displaying this annoying notice", "secondary-title"); ?>
             </a>
          </div>
          <button type="button" class="notice-dismiss">
-            <span class="screen-reader-text">Dismiss this notice.</span>
+            <span class="screen-reader-text">
+               <?php _e("Dismiss this notice.", "secondary-title"); ?>
+            </span>
          </button>
          <br>
       </div>
@@ -536,36 +602,14 @@
    add_action("admin_head", "secondary_title_deactivate_donation_notice");
 
    /**
-    * Add plugin action links.
-    *
-    * Add a link to the settings page on the plugins.php page.
-    *
-    * @since 1.0.0
-    *
-    * @param  array $links List of existing plugin action links.
-    *
-    * @return array         List of modified plugin action links.
-    */
-   function my_plugin_action_links($links) {
-      $links = array_merge(
-         array(
-            '<a href="' . esc_url(admin_url('/options-general.php')) . '">' . __('Settings', 'textdomain') . '</a>'
-         ),
-         $links
-      );
-
-      return $links;
-   }
-
-   /**
     * Adds a link to the plugin's settings page on WP's
     * "Plugins" section in the admin area.
     *
     * @param array $links The already existing links ("Disable", "Activate", ...)
     *
-    * @since 1.9.7
-    *
     * @return array
+    *
+    * @since 1.9.7
     */
    function secondary_title_add_settings_link(array $links) {
       $settings_link      = "";
@@ -585,3 +629,41 @@
 
       return (array)$links;
    }
+
+   /**
+    * Support for All in One SEO Pack plugin. Replaces the tag %secondary_title%
+    * with the secondary title of the post (if exists).
+    *
+    * @param $title
+    *
+    * @return string
+    *
+    * @since 2.0.0
+    */
+   function secondary_title_aioseop_tag($title) {
+      /** Exit this filter if All in One SEO Pack plugin is not active */
+      if(!function_exists("aioseop_get_options") || !class_exists("All_in_One_SEO_Pack")) {
+         return (string)$title;
+      }
+
+      /** Get the plugin's options */
+      $aioseop_options      = aioseop_get_options();
+      $rewrite_option_value = $aioseop_options["aiosp_rewrite_titles"];
+
+      /** Exit this filter if rewrite title option is not activated */
+      if(!$rewrite_option_value) {
+         return (string)$title;
+      }
+
+      /** Replace the tag with the actual secondary title */
+      $new_title = str_replace(
+         "%secondary_title%",
+         get_secondary_title(get_the_ID()),
+         $title
+      );
+
+      /** Et voilà! */
+      return (string)$new_title;
+   }
+
+   add_filter("aioseop_title", "secondary_title_aioseop_tag", 10, 1);

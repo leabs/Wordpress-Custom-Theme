@@ -1,7 +1,7 @@
 <?php
    /**
-    * (C) 2018 by Kolja Nolte
-    * kolja@koljanolte.com
+    * (C) 2019 by Kolja Nolte
+    * kolja.nolte@gmail.com
     * https://www.koljanolte.com
     *
     * This program is free software; you can redistribute it and/or modify
@@ -62,7 +62,7 @@
       $settings = secondary_title_get_settings(false);
       ?>
       <form method="post" action="" class="wrap metabox-holder" id="secondary-title-settings">
-         <input type="hidden" id="text-confirm-reset" value="<?php _e("Are you sure you want to reset all settings?", "secondary-title"); ?>"/>
+         <input type="hidden" id="text-confirm-reset" value="<?php _e("Are you sure you want to reset all settings?", "secondary-title"); ?>" />
          <h1 class="page-title">
             <i class="fa fa-cogs"></i>
             Secondary Title
@@ -100,18 +100,16 @@
                            </label>
                         </th>
                         <td>
+                           <?php secondary_title_print_html_info_circle("auto-show"); ?>
                            <div class="radios" id="auto-show">
                               <input type="radio" id="auto-show-on" name="auto_show" value="on"<?php checked($settings["auto_show"], "on"); ?>/>
                               <label for="auto-show-on"><?php _e("On", "secondary-title"); ?></label>
-
                               <input type="radio" id="auto-show-off" name="auto_show" value="off"<?php checked($settings["auto_show"], "off"); ?>/>
                               <label for="auto-show-off"><?php _e("Off", "secondary-title"); ?></label>
                            </div>
-
                            <p id="auto-show-on-description" class="description"<?php checked($settings["auto_show"], "off"); ?> hidden>
                               <?php _e("Automatically merges the secondary title with the standard title.", "secondary-title"); ?>
                            </p>
-
                            <p id="auto-show-off-description" class="description">
                               <?php
                                  echo sprintf(__('To manually insert the secondary title in your theme, use %s. See the <a href="%s" title="See official documentation" target="_blank" >official documentation</a> for additional parameters.', "secondary-title"), "<code>&lt;?php echo get_secondary_title(); ?&gt;</code>", "https://thaikolja.gitbooks.io/secondary-title/functions.html#get-secondary-title");
@@ -127,8 +125,8 @@
                            </label>
                         </th>
                         <td>
-                           <input type="hidden" id="title-format-backup" value="<?php echo stripslashes(esc_attr(get_option("secondary_title_title_format"))); ?>"/>
-                           <input type="text" name="title_format" id="title-format" class="regular-text" placeholder="<?php _e("E.g.: %secondary_title%: %title%", "secondary-title"); ?>" value="<?php echo stripslashes(esc_attr(get_option("secondary_title_title_format"))); ?>" autocomplete="off"/>
+                           <input type="hidden" id="title-format-backup" value="<?php echo stripslashes(esc_attr(get_option("secondary_title_title_format"))); ?>" />
+                           <input type="text" name="title_format" id="title-format" class="regular-text" placeholder="<?php _e("E.g.: %secondary_title%: %title%", "secondary-title"); ?>" value="<?php echo stripslashes(esc_attr(get_option("secondary_title_title_format"))); ?>" autocomplete="off" />
                            <p class="description">
                               <?php
                                  echo sprintf(
@@ -144,8 +142,8 @@
                                  if($random_post) {
                                     $post_id = $random_post->ID;
                                     ?>
-                                    <input type="hidden" id="random-post-title" value="<?php echo get_the_title($post_id); ?>"/>
-                                    <input type="hidden" id="random-post-secondary-title" value="<?php echo get_secondary_title($post_id); ?>"/>
+                                    <input type="hidden" id="random-post-title" value="<?php echo get_the_title($post_id); ?>" />
+                                    <input type="hidden" id="random-post-secondary-title" value="<?php echo get_secondary_title($post_id); ?>" />
                                     <h4><?php _e("Preview", "secondary-title"); ?>:</h4>
                                     <div id="title-format-preview">
                                        <span class="text-field"></span>
@@ -179,10 +177,10 @@
                               <?php _e("Only show in main post", "secondary-title"); ?>:
                            </th>
                            <td>
+                              <?php secondary_title_print_html_info_circle("only-show-in-main-post"); ?>
                               <div class="radios">
                                  <input type="radio" id="only-show-in-main-post-on" name="only_show_in_main_post" value="on"<?php checked($settings["only_show_in_main_post"], "on"); ?>/>
                                  <label for="only-show-in-main-post-on"><?php _e("On", "secondary-title"); ?></label>
-
                                  <input type="radio" id="only-show-in-main-post-off" name="only_show_in_main_post" value="off"<?php checked($settings["only_show_in_main_post"], "off"); ?>/>
                                  <label for="only-show-in-main-post-off"><?php _e("Off", "secondary-title"); ?></label>
                               </div>
@@ -197,6 +195,7 @@
                               <?php _e("Post types", "secondary-title"); ?>:
                            </th>
                            <td>
+                              <?php secondary_title_print_html_info_circle("post-types"); ?>
                               <div class="post-types">
                                  <?php
                                     $post_types = get_post_types(
@@ -239,7 +238,7 @@
                                  ?>
                               </div>
                               <p class="description">
-                                 <?php _e("Only displays the secondary title if post among the selected post types.", "secondary-title"); ?>
+                                 <?php _e("Only displays the secondary title if post among the selected post types. Select none for all.", "secondary-title"); ?>
                               </p>
                            </td>
                         </tr>
@@ -249,6 +248,7 @@
                               <?php _e("Categories", "secondary-title"); ?>:
                            </th>
                            <td>
+                              <?php secondary_title_print_html_info_circle("categories"); ?>
                               <div class="list">
                                  <?php
                                     $categories = get_categories(
@@ -290,7 +290,7 @@
                                     </span>
                                  </div>
                                  <p class="description">
-                                    <?php _e("Displays the secondary title only if post is among the selected categories.", "secondary-title"); ?>
+                                    <?php _e("Displays the secondary title only if post is among the selected categories. Select none for all.", "secondary-title"); ?>
                                  </p>
                               </div>
                            </td>
@@ -303,7 +303,7 @@
                               </label>
                            </th>
                            <td>
-                              <input name="post_ids" id="post-ids" class="widefat" placeholder="<?php _e("E.g. 13, 71, 33", "secondary-title"); ?>" value="<?php echo implode(", ", secondary_title_get_setting("post_ids")); ?>"/>
+                              <input name="post_ids" id="post-ids" class="widefat" placeholder="<?php _e("E.g. 13, 71, 33", "secondary-title"); ?>" value="<?php echo implode(", ", secondary_title_get_setting("post_ids")); ?>" />
                               <p class="description">
                                  <?php _e("Only uses the secondary title if post is among the entered post IDs. Use commas to separate multiple IDs.", "secondary-title"); ?>
                               </p>
@@ -335,7 +335,6 @@
                                     <label for="include-in-search-on">
                                        <?php _e("On", "secondary-title"); ?>
                                     </label>
-
                                     <input type="radio" name="include_in_search" id="include-in-search-off" value="off" <?php checked($settings["include_in_search"], "off"); ?>>
                                     <label for="include-in-search-off">
                                        <?php _e("Off", "secondary-title"); ?>
@@ -358,7 +357,6 @@
                                  <div class="radios">
                                     <input type="radio" name="input_field_position" id="input-field-position-top" value="above" <?php checked($settings["input_field_position"], "above"); ?>/>
                                     <label for="input-field-position-top"><?php _e("Above standard title", "secondary-title"); ?></label>
-
                                     <input type="radio" name="input_field_position" id="input-field-position-bottom" value="below" <?php checked($settings["input_field_position"], "below"); ?>/>
                                     <label for="input-field-position-bottom"><?php _e("Below standard title", "secondary-title"); ?></label>
                                  </div>
@@ -381,7 +379,6 @@
                                     <label for="column-position-left">
                                        <?php _e("Left of primary title", "secondary-title"); ?>
                                     </label>
-
                                     <input type="radio" name="column_position" id="column-position-right" value="right" <?php checked($settings["column_position"], "right"); ?>>
                                     <label for="column-position-right">
                                        <?php _e("Right of primary title", "secondary-title"); ?>
@@ -415,7 +412,7 @@
          <?php wp_nonce_field("secondary_title_save_settings", "nonce"); ?>
          <div id="report-bug">
             <i class="fa fa-bug"></i>
-            <?php echo sprintf(__('Found an error? Help making Secondary Title better by <a href="%s" title="Click here to report a bug" target="_blank">quickly reporting the bug</a>.', "secondary-title"), "https://wordpress.org/support/plugin/secondary-title#new-post"); ?>
+            <?php echo sprintf(__('Found an error? Help making Secondary Title better by <a href="%s" title="Click here to report a bug" target="_blank">quickly reporting the bug</a>.', "secondary-title"), "https://wordpress.org/support/plugin/secondary-title/#new-post"); ?>
          </div>
       </form>
       <?php
