@@ -1,6 +1,10 @@
 <?php get_header('gallery');?>
 <div class="container">
     <section class="section">
+
+        
+
+
         <div class="columns" style="flex-wrap: wrap;
     align-items: stretch;">
             <?php if (have_posts()) : while(have_posts()) : the_post();?>
@@ -37,15 +41,15 @@
                             </div>
                         </div>
                         <footer class="project-card-footer card-footer">
-                            
+
                         </footer>
                     </div>
                 </div>
-                
+
             </div>
-			<?php 
+            <?php 
                 endwhile; endif; ?>
-            
+
     </section>
 </div>
 <?php get_footer();?>

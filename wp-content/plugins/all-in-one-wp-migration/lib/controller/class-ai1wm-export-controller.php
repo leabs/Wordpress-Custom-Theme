@@ -115,7 +115,7 @@ class Ai1wm_Export_Controller {
 						}
 
 						wp_remote_post( apply_filters( 'ai1wm_http_export_url', admin_url( 'admin-ajax.php?action=ai1wm_export' ) ), array(
-							'timeout'   => apply_filters( 'ai1wm_http_export_timeout', 5 ),
+							'timeout'   => apply_filters( 'ai1wm_http_export_timeout', 10 ),
 							'blocking'  => apply_filters( 'ai1wm_http_export_blocking', false ),
 							'sslverify' => apply_filters( 'ai1wm_http_export_sslverify', false ),
 							'headers'   => apply_filters( 'ai1wm_http_export_headers', array() ),

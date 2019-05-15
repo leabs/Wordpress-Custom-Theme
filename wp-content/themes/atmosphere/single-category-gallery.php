@@ -1,5 +1,7 @@
 <?php get_header('nobanner');?>
 
+
+
 <section class="section" style="padding-top:12px; padding-bottom:12px;">
     <div class="container" style="padding:60px 0;">
         <div class="columns">
@@ -37,7 +39,7 @@
                 <!--Hackster link-->
                 <?php $url = get_field('External_Project_link'); ?>
                 <?php if( $url ): ?><a class="atmo-button atmo-button-dark" href="<?php echo $url; ?>"
-                    target="_blank"><?php endif; ?> View on Hackster <?php if( $url ): ?></a><?php endif; 
+                    target="_blank"><?php endif; ?> View Full Project <?php if( $url ): ?></a><?php endif; 
                 ?>
 
                 <?php endwhile; endif;?>
