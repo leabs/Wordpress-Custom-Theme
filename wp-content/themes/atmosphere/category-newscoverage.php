@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('news');?>
 
 <section class="section">
     <div class="container">

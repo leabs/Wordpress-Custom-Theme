@@ -1,5 +1,5 @@
-<?php /* Template Name: Blog post no Date */ ?>
-<?php get_header('nobanner');?>
+<?php /* Template Name: Events */ ?>
+<?php get_header('events');?>
 
 <section class="section">
     <div class="container">
