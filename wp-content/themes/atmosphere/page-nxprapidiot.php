@@ -19,7 +19,7 @@ $posts = get_posts(array(
 	'numberposts'	=> -1,
 	'post_type'		=> 'post',
 	'meta_key'		=> 'project_platform',
-    'meta_value'	=> 'AVR-IoT'
+    'meta_value'	=> 'NXP-Rapid-IoT'
 ));
 
 if( $posts ): ?>

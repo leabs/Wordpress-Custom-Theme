@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+
 
 </head>
 
 <body <?php body_class();?>>
 
-    <header class="pageheader pricing-header">
+    <header class="pageheader blog-header">
         <!--Topbar-->
         <div class="top-nav-wrapper is-hidden-touch">
             <div class="container">
@@ -59,14 +63,15 @@
             </div>
         </nav>
 
-        <div class="hero-body has-text-centered">
+        <div class="hero-body">
             <div class="container " style="position: relative;">
 
                 <h1 class="has-text-white full-header">
-                    Project Gallery
+                Atmosphere News
+
                 </h1>
                 <h2 class="has-text-white sub-header">
-                    Check out these real-world projects made using the Atmosphere IoT Platform
+                Read official announcements from Atmosphere and the latest coverage about us.
                 </h2>
 
 

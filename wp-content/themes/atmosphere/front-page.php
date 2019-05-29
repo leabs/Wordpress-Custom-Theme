@@ -40,7 +40,7 @@ wp_head();
             <?php $catquery = new WP_Query( 'cat=3&posts_per_page=3' ); ?>
             <div class="columns">
                 <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-                <div class="column homepage-blog-card">
+                <div class="column is-12-mobile homepage-blog-card">
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <?php if ( has_post_thumbnail()) {
     $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');

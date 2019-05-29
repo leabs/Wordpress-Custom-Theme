@@ -92,7 +92,7 @@
                 </aside>
             </div>
 
-            <div class="column is-9">
+            <div class="column is-9 single-post-container" style="max-width:800px">
                 <h1 class="section-header"><?php the_title(); ?></h1>
                 <br>
 
