@@ -3,7 +3,7 @@ Contributors:        thaikolja
 Donate link:         https://www.paypal.me/thaikolja/10
 Tags: title,         alternative title, secondary title, second title, additional title, post title, title
 Tested up to:        5.2
-Stable tag:          2.0.0
+Stable tag:          2.0.2
 Requires at least:   4.0
 Requires PHP:        5.3.0
 License:             GPLv2 or later
@@ -67,6 +67,11 @@ The full FAQ can be found in the [documentation](https://thaikolja.gitbooks.io/s
 5. A section of Secondary Title's settings page.
 
 == Changelog ==
+
+= 2.0.2 =
+* Added full support for [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/) 3.0. [Use `%secondary_title%`](https://semperplugins.com/documentation/title-settings/) to display.
+* Added note reminding that *Input field* and *Column position* option only apply when using Classical Editor in WordPress versions with Gutenberg (>= 5.0).
+* Cosmetic changes to the plugin's settings page.
 
 = 2.0.1 =
 * Hotfix: Moved file `admin/settings.php` to `includes/setings.php` due to PHP complications.

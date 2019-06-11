@@ -631,39 +631,81 @@
    }
 
    /**
-    * Support for All in One SEO Pack plugin. Replaces the tag %secondary_title%
-    * with the secondary title of the post (if exists).
+    * Support for All in One SEO Pack plugin.
     *
-    * @param $title
-    *
-    * @return string
-    *
-    * @since 2.0.0
+    * @since 2.0.2
     */
-   function secondary_title_aioseop_tag($title) {
-      /** Exit this filter if All in One SEO Pack plugin is not active */
-      if(!function_exists("aioseop_get_options") || !class_exists("All_in_One_SEO_Pack")) {
-         return (string)$title;
+   function secondary_title_support_aioseop() {
+      /** Exit if the plugin is not active */
+      if(!defined("AIOSEOP_VERSION")) {
+         return;
       }
 
-      /** Get the plugin's options */
-      $aioseop_options      = aioseop_get_options();
-      $rewrite_option_value = $aioseop_options["aiosp_rewrite_titles"];
+      /** Compare the plugin verison */
+      if(version_compare(AIOSEOP_VERSION, "3.0-dev", ">=")) {
+         /**
+          * For version >= 3.0. Replaces the tag %secondary_title%
+          * with the secondary title of the post (if exists).
+          *
+          * @param $title_format
+          *
+          * @return string
+          *
+          * @since 2.0.2
+          */
+         function secondary_title_support_aioseop_title_format($title_format) {
+            /** Replace the tag with the actual secondary title */
+            $new_title_format = str_replace(
+               "%secondary_title%",
+               get_secondary_title(get_the_ID()),
+               $title_format
+            );
 
-      /** Exit this filter if rewrite title option is not activated */
-      if(!$rewrite_option_value) {
-         return (string)$title;
+            /** Et voilà! */
+            return (string)$new_title_format;
+         }
+
+         add_action("aioseop_title_format", "secondary_title_support_aioseop_title_format");
       }
+      else {
+         /**
+          * For version < 3.0. Replaces the tag %secondary_title%
+          * with the secondary title of the post (if exists).
+          *
+          * @param $title
+          *
+          * @return string
+          *
+          * @since 2.0.0
+          */
+         function secondary_title_support_aioseop_title($title) {
+            /** Exit this filter if All in One SEO Pack plugin is not active */
+            if(!function_exists("aioseop_get_options") || !class_exists("All_in_One_SEO_Pack")) {
+               return (string)$title;
+            }
 
-      /** Replace the tag with the actual secondary title */
-      $new_title = str_replace(
-         "%secondary_title%",
-         get_secondary_title(get_the_ID()),
-         $title
-      );
+            /** Get the plugin's options */
+            $aioseop_options      = aioseop_get_options();
+            $rewrite_option_value = $aioseop_options["aiosp_rewrite_titles"];
 
-      /** Et voilà! */
-      return (string)$new_title;
+            /** Exit this filter if rewrite title option is not activated */
+            if(!$rewrite_option_value) {
+               return (string)$title;
+            }
+
+            /** Replace the tag with the actual secondary title */
+            $new_title = str_replace(
+               "%secondary_title%",
+               get_secondary_title(get_the_ID()),
+               $title
+            );
+
+            /** Et voilà! */
+            return (string)$new_title;
+         }
+
+         add_filter("aioseop_title", "secondary_title_support_aioseop_title", 10, 1);
+      }
    }
 
-   add_filter("aioseop_title", "secondary_title_aioseop_tag", 10, 1);
+   add_action("init", "secondary_title_support_aioseop");

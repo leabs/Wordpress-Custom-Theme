@@ -40,6 +40,8 @@
          wp_die(__("You are not authorized to view this page.", "secondary-title"));
       }
 
+      global $wp_version;
+
       /** Check if the submit button was hit and call is authorized */
       $reset_url = wp_nonce_url(
          get_admin_url() . "options-general.php?page=secondary-title&action=reset",
@@ -71,21 +73,26 @@
             if($saved) {
                ?>
                <div class="updated">
-                  <p><?php _e("The settings have been successfully updated.", "secondary-title"); ?></p>
+                  <p>
+                     <i class="fa fa-check-circle"></i>
+                     <?php _e("The settings have been successfully updated.", "secondary-title"); ?>
+                  </p>
                </div>
                <?php
             }
             elseif($reset) {
                ?>
                <div class="updated">
-                  <p><?php _e("All settings have been reset to their default values.", "secondary-title"); ?></p>
+                  <p>
+                     <i class="fa fa-check-circle"></i>
+                     <?php _e("All settings have been reset to their default values.", "secondary-title"); ?>
+                  </p>
                </div>
                <?php
             }
          ?>
          <section class="postboxes" id="postbox-general-settings">
             <div class="postbox">
-               <div class="content-toggler" title="<?php _e("Collapse/expand section", "secondary-title"); ?>"></div>
                <h3 class="postbox-title hndle">
                   <i class="fa fa-wrench"></i>
                   <?php _e("General Settings", "secondary-title"); ?>
@@ -164,7 +171,6 @@
             </div>
             <section class="postboxes" id="postbox-display-rules">
                <div class="postbox">
-                  <div class="content-toggler"></div>
                   <h3 class="postbox-title hndle">
                      <i class="fa fa-eye"></i>
                      <?php _e("Display Rules", "secondary-title"); ?>
@@ -209,7 +215,7 @@
                                           continue;
                                        }
 
-                                       $post_type       = get_post_type_object($post_type);
+                                       $post_type       = new WP_Post_Type($post_type);
                                        $post_type_posts = new WP_Query(
                                           array(
                                              "post_type" => $post_type->name
@@ -314,7 +320,6 @@
                </div>
                <section class="postboxes">
                   <div class="postbox">
-                     <div class="content-toggler" title="<?php _e("Collapse/expand section", "secondary-title"); ?>"></div>
                      <h3 class="postbox-title hndle">
                         <i class="fa fa-cog"></i>
                         <?php _e("Miscellaneous Settings ", "secondary-title"); ?>
@@ -362,6 +367,14 @@
                                  </div>
                                  <p class="description">
                                     <?php _e("Determines the position of the secondary title input field on add/edit post pages within the admin area.", "secondary-title"); ?>
+                                    <?php
+                                       if(version_compare($wp_version, "5.0", ">=")) {
+                                          ?>
+                                          <strong><?php _e("Note", "secondary-title"); ?>:</strong>
+                                          <?php
+                                          _e("This option only applies when using the Classic Editor plugin.", "secondary-title");
+                                       }
+                                    ?>
                                  </p>
                               </td>
                            </tr>
@@ -386,6 +399,14 @@
                                  </div>
                                  <p class="description">
                                     <?php echo sprintf(__("Specifies the position of the secondary title in regard to the primary title on <a href=\"%s\">post overview</a> pages within the admin area.", "secondary-title"), get_admin_url() . "edit.php"); ?>
+                                    <?php
+                                       if(version_compare($wp_version, "5.0", ">=")) {
+                                          ?>
+                                          <strong><?php _e("Note", "secondary-title"); ?>:</strong>
+                                          <?php
+                                          _e("This option only applies when using the Classic Editor plugin.", "secondary-title");
+                                       }
+                                    ?>
                                  </p>
                               </td>
                            </tr>

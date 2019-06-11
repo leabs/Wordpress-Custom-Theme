@@ -104,19 +104,6 @@ jQuery(document).ready(function () {
          }
       });
 
-      jQuery(".postbox-title, .content-toggler").click(function () {
-         var container = jQuery(this).parents(".postbox");
-         var inside    = container.find(".inside");
-
-         if(inside.hasClass("closed")) {
-            inside.slideDown();
-            inside.removeClass("closed")
-         } else {
-            inside.slideUp();
-            inside.addClass("closed")
-         }
-      });
-
       jQuery("#row-auto-show").find("input").click(function () {
          toggleAutoShowDescription()
       });

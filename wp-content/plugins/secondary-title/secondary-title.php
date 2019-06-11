@@ -16,7 +16,7 @@
     * Plugin Name:   Secondary Title
     * Plugin URI:    https://www.koljanolte.com/wordpress/plugins/secondary-title/
     * Description:   Adds a secondary title to posts, pages and custom post types.
-    * Version:       2.0.1
+    * Version:       2.0.2
     * Author:        Kolja Nolte
     * Author URI:    http://www.koljanolte.com
     * License:       GPLv2 or later
@@ -34,8 +34,7 @@
 
    define("SECONDARY_TITLE_PATH", plugin_dir_path(__FILE__));
    define("SECONDARY_TITLE_URL", plugin_dir_url(__FILE__));
-   define("SECONDARY_TITLE_VERSION", "2.0.1");
-   define("SECONDARY_TITLE_TEXTDOMAIN", "secondary-title");
+   define("SECONDARY_TITLE_VERSION", "2.0.2");
 
    /** Install default settings (if not set yet) */
    register_activation_hook(__FILE__, "secondary_title_install");
