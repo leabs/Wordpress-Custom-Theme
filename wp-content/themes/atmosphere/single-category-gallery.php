@@ -3,7 +3,72 @@
 <section class="section" style="padding-top:12px; padding-bottom:12px;">
     <div class="container" style="padding:60px 0;">
         <div class="columns">
-            <div class="column is-8 is-offset-2">
+        <div class="column is-3 is-hidden-touch"
+                style="padding-left:12px; padding-right:22px; padding-top:20px; padding-bottom:0; padding-top:0;">
+                <div class="control has-icons-left has-icons-right is-hidden-touch" id="search-wrapper">
+                    <div class="header-search">
+                        <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                            <label>
+
+                                <input type="search" class="search-field"
+                                    placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>"
+                                    value="<?php echo get_search_query() ?>" name="s"
+                                    title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+                            </label>
+
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <aside class="menu blog-menu">
+                    <p class="menu-label">
+                        Gallery Posts
+                    </p>
+                    <ul class="menu-list events-list">
+                        <li><a href="https://atmosphereiot.com/category/gallery/">All Gallery Posts</a></li>
+
+
+                    </ul>
+                    <p class="menu-label">
+                        Projects By Platform
+                    </p>
+                    <ul class="menu-list events-list">
+                        <li><a
+                                href="<?php echo wp_make_link_relative('https://atmosphereiot.com/category/gallery/avr-iot-project/'); ?>">AVR
+                                IoT</a></li>
+                        <li><a
+                                href="<?php echo wp_make_link_relative('https://atmosphereiot.com/category/gallery/nxp-rapid-iot-projects/'); ?>">NXP
+                                Rapid IoT</a></li>
+
+                    </ul>
+
+
+                    <p class="menu-label menu-label-no-bottom-margin">
+                        Latest Gallery Posts
+                    </p>
+                    <ul class="menu-list blog-list">
+
+                        <?php $catquery = new WP_Query( 'cat=98&posts_per_page=5' ); ?>
+
+
+                        <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+
+
+                        <li><a href="<?php the_permalink() ?>" rel="bookmark">
+                                <?php the_title(); ?></a></li>
+                        <span class="latest-post-meta">
+                            <?php the_time('F jS, Y'); ?></span>
+                        <?php endwhile;
+                                wp_reset_postdata();
+                        ?>
+                    </ul>
+
+
+
+
+                </aside>
+            </div>
+            <div class="column is-9">
                 <!--Post Title-->
                 <h1 class="section-header">
                     <?php the_title(); ?>

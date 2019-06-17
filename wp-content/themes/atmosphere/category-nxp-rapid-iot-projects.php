@@ -1,4 +1,4 @@
-<?php get_header('blog');?>
+<?php get_header('gallery');?>
 
 <section class="section">
     <div class="container">
@@ -21,6 +21,15 @@
                 </div>
                 <br>
                 <aside class="menu blog-menu">
+					<p class="menu-label">
+                        Gallery Posts
+                    </p>
+                    <ul class="menu-list events-list">
+                        <li><a
+                                href="https://atmosphereiot.com/category/gallery/">All Gallery Posts</a></li>
+                        
+                        
+                    </ul>
                     <p class="menu-label">
                         Projects By Platform
                     </p>
